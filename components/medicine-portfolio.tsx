@@ -214,11 +214,11 @@ export function MedicinePortfolio() {
         <div className="footer-vehicle-dock">
           <Image
             className="footer-evoque"
-            src="/range-rover-evoque-pixel.png"
-            alt="White pixel-art Range Rover Evoque"
-            width={1366}
-            height={768}
-            sizes="(max-width: 420px) 154px, (max-width: 760px) 185px, 210px"
+            src="/range-rover-evoque-side-profile.png"
+            alt="White pixel-art Range Rover Evoque shown from the right side"
+            width={896}
+            height={362}
+            sizes="(max-width: 420px) 116px, (max-width: 760px) 132px, 160px"
           />
         </div>
         <footer className="page-footer">

@@ -580,7 +580,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  height: 90px;
+  height: 66px;
   margin: 18px 0 0;
   overflow: visible;
 }
@@ -592,14 +592,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
   object-fit: contain;
   image-rendering: pixelated;
   filter: drop-shadow(3px 3px 0 rgb(23 50 75 / 20%));
-  transform: translateY(12px);
+  transform: translateY(2px);
 }
 .footer-vehicle-dock + .page-footer { position: relative; z-index: 1; margin-top: 0; }
 @media (max-width: 760px) {
-  .footer-vehicle-dock { height: 74px; margin: 16px 0 0; }
+  .footer-vehicle-dock { height: 54px; margin: 16px 0 0; }
   .footer-evoque { width: 132px; }
 }
 @media (max-width: 420px) {
-  .footer-vehicle-dock { height: 65px; margin: 14px 0 0; }
+  .footer-vehicle-dock { height: 48px; margin: 14px 0 0; }
   .footer-evoque { width: 116px; }
 }
