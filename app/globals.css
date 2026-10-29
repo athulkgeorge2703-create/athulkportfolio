@@ -259,31 +259,31 @@ button, a { -webkit-tap-highlight-color: transparent; }
   padding: 13px;
   border: 5px solid #922927;
   border-radius: 8px;
-  background: #243329;
+  background: #27394a;
   box-shadow: inset 0 0 0 2px rgb(255 255 255 / 8%);
 }
-.specimen-frame { border-color: #4d614c; background: #dce7c2; }
-.specimen-label, .specimen-caption { color: #415a40; }
+.specimen-frame { border-color: #7189a0; background: #d7e8f5; }
+.specimen-label, .specimen-caption { color: #456078; }
 .specimen-image { image-rendering: pixelated; }
 .entry-copy {
   padding: 19px;
-  border: 5px solid #566448;
+  border: 5px solid #607b92;
   border-radius: 3px;
-  color: #293d2d;
-  background-color: #dce7c2;
-  background-image: repeating-linear-gradient(0deg, rgb(50 78 53 / 3%) 0 1px, transparent 1px 4px);
+  color: #23394b;
+  background-color: #d7e8f5;
+  background-image: repeating-linear-gradient(0deg, rgb(42 88 125 / 4%) 0 1px, transparent 1px 4px);
   box-shadow: inset 0 0 0 2px rgb(255 255 255 / 28%);
 }
-.entry-tags span { border-color: #9eae88; color: #466044; }
-.entry-copy h2 { color: #243a2b; }
-.entry-role { color: #4c6249; }
+.entry-tags span { border-color: #9fb5ca; color: #3f5c76; }
+.entry-copy h2 { color: #21384c; }
+.entry-role { color: #4e6780; }
 .entry-role span { color: #c63832; }
-.entry-summary { color: #354b38; }
-.placeholder-hint { color: #66765c; }
-.entry-facts { border-color: rgb(58 81 52 / 28%); }
-.entry-facts > div { border-color: rgb(58 81 52 / 22%); color: #354b38; }
-.entry-facts svg { color: #59734e; }
-.fact-label { color: #697958; }
+.entry-summary { color: #344e65; }
+.placeholder-hint { color: #667f94; }
+.entry-facts { border-color: rgb(59 91 121 / 28%); }
+.entry-facts > div { border-color: rgb(59 91 121 / 22%); color: #344e65; }
+.entry-facts svg { color: #547797; }
+.fact-label { color: #617a91; }
 .entry-cta { border-color: #b72e2a; color: #fff9ec; background: #c63832; }
 .entry-cta:hover { color: #fff9ec; background: #a62927; }
 .entry-footline { min-height: 46px; border-top-color: rgb(255 238 216 / 28%); }

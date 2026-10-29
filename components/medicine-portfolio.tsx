@@ -99,7 +99,7 @@ export function MedicinePortfolio() {
               <div className="specimen-label"><span>FIG. 01</span><span>FIELD SPECIMEN</span></div>
               <Image
                 className="specimen-image"
-                src="/clinical-dex-sprite.png"
+                src="/clinical-dex-sprite-blue.png"
                 alt="Pixel-art Pokédex specimen: a stethoscope curled around ginkgo leaves and a capsule"
                 width={800}
                 height={600}
@@ -110,13 +110,12 @@ export function MedicinePortfolio() {
 
             <div className="entry-copy">
               <div className="entry-tags"><span>TYPE: MEDICINE</span><span>TRAINER FILE</span></div>
-              <h2 id="entry-name">[Your Name]</h2>
+              <h2 id="entry-name">Athul Kochitty George</h2>
               <p className="entry-role">MD Student <span>·</span> 2026</p>
               <p className="entry-summary">
                 A curious MD student, drawn to thoughtful care, clear communication, and the questions that move medicine forward.
               </p>
               <div className="entry-facts">
-                <div><span className="fact-label">ABILITY</span><span><Activity size={14} aria-hidden="true" /> [Your signature strength]</span></div>
                 <div><span className="fact-label">HABITAT</span><span><MapPin size={14} aria-hidden="true" /> UAE, Sharjah</span></div>
                 <div><span className="fact-label">INSTITUTION</span><span><BookOpen size={14} aria-hidden="true" /> GMU, Ajman</span></div>
               </div>
@@ -202,7 +201,7 @@ export function MedicinePortfolio() {
 
         <footer className="page-footer">
           <span>MED-DEX <span className="footer-divider">/</span> A PERSONAL FIELD GUIDE</span>
-          <span>MADE WITH CARE, BY [YOUR NAME]</span>
+          <span>MADE WITH CARE, BY ATHUL KOCHITTY GEORGE</span>
           <a href="#top">BACK TO TOP ↑</a>
         </footer>
       </div>
