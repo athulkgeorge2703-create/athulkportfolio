@@ -89,9 +89,9 @@ export function MedicinePortfolio() {
 
         <section className="entry-card" id="profile" aria-labelledby="entry-name">
           <div className="entry-topline">
-            <span><span className="tiny-square" /> MEDICAL FIELD GUIDE</span>
-            <span>ENTRY NO. <strong>001</strong></span>
-            <span className="entry-status"><span className="live-dot" /> ACTIVE PROFILE</span>
+            <span><span className="tiny-square" /> POKÉDEX / HUMAN FILE</span>
+            <span>NO. <strong>001</strong></span>
+            <span className="entry-status"><span className="live-dot" /> ENTRY LOADED</span>
           </div>
 
           <div className="entry-main">
@@ -99,8 +99,8 @@ export function MedicinePortfolio() {
               <div className="specimen-label"><span>FIG. 01</span><span>FIELD SPECIMEN</span></div>
               <Image
                 className="specimen-image"
-                src="/clinical-stilllife.png"
-                alt="A stethoscope and ginkgo leaves arranged as a medical field-guide specimen"
+                src="/clinical-dex-sprite.png"
+                alt="Pixel-art Pokédex specimen: a stethoscope curled around ginkgo leaves and a capsule"
                 width={800}
                 height={600}
                 priority
@@ -109,7 +109,7 @@ export function MedicinePortfolio() {
             </div>
 
             <div className="entry-copy">
-              <div className="entry-tags"><span>MEDICINE</span><span>PORTFOLIO ENTRY</span></div>
+              <div className="entry-tags"><span>TYPE: MEDICINE</span><span>TRAINER FILE</span></div>
               <h2 id="entry-name">[Your Name]</h2>
               <p className="entry-role">[Medical student / clinician] <span>·</span> [Year or specialty]</p>
               <p className="entry-summary">
@@ -117,17 +117,24 @@ export function MedicinePortfolio() {
                 <span className="placeholder-hint"> Replace this with a short introduction in your own voice.</span>
               </p>
               <div className="entry-facts">
-                <div><span className="fact-label">CURRENT BASE</span><span><MapPin size={14} aria-hidden="true" /> [City, Country]</span></div>
-                <div><span className="fact-label">TRAINING AT</span><span><BookOpen size={14} aria-hidden="true" /> [Medical school / institution]</span></div>
-                <div><span className="fact-label">CURRENT FOCUS</span><span><Activity size={14} aria-hidden="true" /> [Area of interest]</span></div>
+                <div><span className="fact-label">ABILITY</span><span><Activity size={14} aria-hidden="true" /> [Your signature strength]</span></div>
+                <div><span className="fact-label">HABITAT</span><span><MapPin size={14} aria-hidden="true" /> [Hospital / community / research]</span></div>
+                <div><span className="fact-label">TRAINER</span><span><BookOpen size={14} aria-hidden="true" /> [Medical school / institution]</span></div>
               </div>
               <a className="entry-cta" href="#field-notes">View field notes <ArrowUpRight size={16} aria-hidden="true" /></a>
             </div>
           </div>
 
           <div className="entry-footline">
-            <span>CLASSIFICATION <strong>HUMAN · HEALER · LIFELONG LEARNER</strong></span>
+            <span>SPECIES <strong>HUMAN · CLINICIAN-IN-TRAINING</strong></span>
             <span>STATUS <strong>ALWAYS LEARNING</strong></span>
+          </div>
+          <div className="device-controls" aria-hidden="true">
+            <span className="control-pad" />
+            <span className="speaker-grille" />
+            <span className="device-control-button device-control-blue" />
+            <span className="device-control-button device-control-yellow" />
+            <span className="device-control-label">MED-DEX · FIELD UNIT</span>
           </div>
         </section>
 
