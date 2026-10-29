@@ -150,8 +150,8 @@ export function MedicinePortfolio() {
 
         <section className="field-notes" id="field-notes" aria-labelledby="field-notes-title">
           <div className="section-intro">
-            <SectionHeading index="01" eyebrow="THE FIELD NOTES" title="Evidence, not just titles." />
-            <p className="section-aside">A small collection of moments, projects, and people that have shaped my practice.</p>
+            <SectionHeading index="01" eyebrow="THE FIELD NOTES" title="Moments that shape my practice." />
+            <p className="section-aside">Explore the projects, clinical experiences, and people shaping how I learn, collaborate, and care.</p>
           </div>
 
           <div className="notes-grid">
