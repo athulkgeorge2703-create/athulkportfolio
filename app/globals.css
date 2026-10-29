@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&family=Pixelify+Sans:wght@400;500;600;700&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
@@ -178,7 +178,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   box-shadow: 4px 4px 0 rgb(23 50 75 / 14%);
 }
 .field-notes .section-index { border-color: #52758b; color: #1a4c6c; background: #e3f1f7; font-weight: 700; }
-.field-notes .section-heading h2 { margin-top: 3px; color: #123e5b; font-size: 32px; font-weight: 700; letter-spacing: -.02em; line-height: 1.2; }
+.field-notes .section-heading h2 { margin-top: 3px; color: #123e5b; font-size: 32px; font-weight: 500; letter-spacing: 0; line-height: 1.2; }
 .field-notes .section-intro .eyebrow { color: #345f70; font-size: 11px; }
 .field-notes .section-aside { max-width: 390px; margin: 0; color: #30475a; font-size: 14px; line-height: 1.55; }
 .field-notes .highlights-panel { border-color: #c3ced2; background: rgb(255 253 247 / 96%); }
@@ -255,6 +255,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 .footer-divider { padding: 0 4px; color: #d96c50; }
 .page-footer a { color: #135c8d; font-size: 13px; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
+.intro h1, .section-heading h2, .contact-card h2 {
+  font-family: 'Pixelify Sans', 'Nunito Sans', Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0;
+}
 
 @media (max-width: 760px) {
   .page-shell { width: min(100% - 32px, 540px); }
