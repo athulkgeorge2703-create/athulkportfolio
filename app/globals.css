@@ -575,27 +575,31 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .entry-card .entry-type-chip { font-size: 10px; }
 }
 .footer-vehicle-dock {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  height: 118px;
-  margin: 22px 16px 0;
+  height: 90px;
+  margin: 18px 0 0;
+  overflow: visible;
 }
 .footer-evoque {
   display: block;
-  width: 210px;
+  width: 160px;
   max-height: 100%;
   height: auto;
   object-fit: contain;
   image-rendering: pixelated;
   filter: drop-shadow(3px 3px 0 rgb(23 50 75 / 20%));
+  transform: translateY(12px);
 }
-.footer-vehicle-dock + .page-footer { margin-top: 10px; }
+.footer-vehicle-dock + .page-footer { position: relative; z-index: 1; margin-top: 0; }
 @media (max-width: 760px) {
-  .footer-vehicle-dock { height: 104px; margin: 18px 8px 0; }
-  .footer-evoque { width: 185px; }
+  .footer-vehicle-dock { height: 74px; margin: 16px 0 0; }
+  .footer-evoque { width: 132px; }
 }
 @media (max-width: 420px) {
-  .footer-vehicle-dock { height: 86px; margin: 16px 4px 0; }
-  .footer-evoque { width: 154px; }
+  .footer-vehicle-dock { height: 65px; margin: 14px 0 0; }
+  .footer-evoque { width: 116px; }
 }
