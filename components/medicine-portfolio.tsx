@@ -111,22 +111,21 @@ export function MedicinePortfolio() {
             <div className="entry-copy">
               <div className="entry-tags"><span>TYPE: MEDICINE</span><span>TRAINER FILE</span></div>
               <h2 id="entry-name">[Your Name]</h2>
-              <p className="entry-role">[Medical student / clinician] <span>·</span> [Year or specialty]</p>
+              <p className="entry-role">MD Student <span>·</span> 2026</p>
               <p className="entry-summary">
-                A curious clinician-in-training, drawn to thoughtful care, clear communication, and the questions that move medicine forward.
-                <span className="placeholder-hint"> Replace this with a short introduction in your own voice.</span>
+                A curious MD student, drawn to thoughtful care, clear communication, and the questions that move medicine forward.
               </p>
               <div className="entry-facts">
                 <div><span className="fact-label">ABILITY</span><span><Activity size={14} aria-hidden="true" /> [Your signature strength]</span></div>
-                <div><span className="fact-label">HABITAT</span><span><MapPin size={14} aria-hidden="true" /> [Hospital / community / research]</span></div>
-                <div><span className="fact-label">TRAINER</span><span><BookOpen size={14} aria-hidden="true" /> [Medical school / institution]</span></div>
+                <div><span className="fact-label">HABITAT</span><span><MapPin size={14} aria-hidden="true" /> UAE, Sharjah</span></div>
+                <div><span className="fact-label">INSTITUTION</span><span><BookOpen size={14} aria-hidden="true" /> GMU, Ajman</span></div>
               </div>
               <a className="entry-cta" href="#field-notes">View field notes <ArrowUpRight size={16} aria-hidden="true" /></a>
             </div>
           </div>
 
           <div className="entry-footline">
-            <span>SPECIES <strong>HUMAN · CLINICIAN-IN-TRAINING</strong></span>
+            <span>SPECIES <strong>HUMAN · MEDICAL STUDENT</strong></span>
             <span>STATUS <strong>ALWAYS LEARNING</strong></span>
           </div>
           <div className="device-controls" aria-hidden="true">
