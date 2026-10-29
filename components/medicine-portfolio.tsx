@@ -218,7 +218,7 @@ export function MedicinePortfolio() {
             alt="White pixel-art Range Rover Evoque shown from the right side"
             width={896}
             height={362}
-            sizes="(max-width: 420px) 116px, (max-width: 760px) 132px, 160px"
+            sizes="(max-width: 420px) 88px, (max-width: 760px) 100px, 120px"
           />
         </div>
         <footer className="page-footer">
