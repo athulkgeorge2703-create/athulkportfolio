@@ -80,14 +80,19 @@ export function MedicinePortfolio() {
         <section className="intro" id="top" aria-labelledby="intro-title">
           <div>
             <p className="eyebrow intro-eyebrow"><span className="live-dot" /> A LIVING RECORD · UPDATED [MONTH YEAR]</p>
-            <h1 id="intro-title">A portfolio<br /><em>with a pulse.</em></h1>
+            <h1 id="intro-title">Portfolio<br /><em>with an entry.</em></h1>
           </div>
           <a className="intro-link" href="#profile">
             Explore this entry <ArrowDownRight size={17} aria-hidden="true" />
           </a>
         </section>
 
-        <section className="entry-card" id="profile" aria-labelledby="entry-name">
+        <div className="dex-stage">
+          <div className="lucario-companion" aria-hidden="true">
+            <Image className="lucario-sprite" src="/lucario-aura-cutout.png" alt="" width={409} height={661} priority />
+            <span className="aura-sphere" />
+          </div>
+          <section className="entry-card" id="profile" aria-labelledby="entry-name">
           <div className="entry-topline">
             <span><span className="tiny-square" /> POKÉDEX / HUMAN FILE</span>
             <span>NO. <strong>001</strong></span>
@@ -140,7 +145,8 @@ export function MedicinePortfolio() {
             <span className="device-control-button device-control-yellow" />
             <span className="device-control-label">MED-DEX · FIELD UNIT</span>
           </div>
-        </section>
+          </section>
+        </div>
 
         <section className="field-notes" id="field-notes" aria-labelledby="field-notes-title">
           <div className="section-intro">
