@@ -91,7 +91,13 @@ export function MedicinePortfolio() {
           <div className="entry-topline">
             <span><span className="tiny-square" /> POKÉDEX / HUMAN FILE</span>
             <span>NO. <strong>001</strong></span>
-            <span className="entry-status"><span className="live-dot" /> ENTRY LOADED</span>
+            <span className="entry-status">
+              <span className="live-dot" aria-hidden="true" />
+              <span className="entry-type-chips" aria-label="Personal types">
+                <span className="entry-type-chip karate-type"><span aria-hidden="true">🥋</span> KARATE BLACK BELT</span>
+                <span className="entry-type-chip cyclist-type"><span aria-hidden="true">🚴</span> CYCLIST</span>
+              </span>
+            </span>
           </div>
 
           <div className="entry-main">

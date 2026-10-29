@@ -359,3 +359,34 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .entry-copy { padding: 12px; }
   .device-controls { grid-template-columns: 38px 1fr auto auto; }
 }
+
+.entry-status { gap: 7px; }
+.entry-type-chips { display: inline-flex; align-items: center; gap: 5px; }
+.entry-type-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  border: 1px solid rgb(255 255 255 / 45%);
+  border-radius: 3px;
+  color: #29415a;
+  background: #dceaf3;
+  font: 700 7px 'Courier New', monospace;
+  letter-spacing: .03em;
+  line-height: 1;
+  white-space: nowrap;
+}
+.entry-type-chip > span { font-family: Arial, Helvetica, sans-serif; font-size: 10px; }
+.cyclist-type { border-color: #efcf75; color: #594719; background: #f5df9e; }
+
+@media (max-width: 760px) {
+  .entry-status { justify-content: flex-end; }
+  .entry-type-chips { justify-content: flex-end; }
+}
+
+@media (max-width: 420px) {
+  .entry-topline { flex-wrap: wrap; gap: 8px; padding: 8px 0; }
+  .entry-status { gap: 5px; }
+  .entry-type-chips { gap: 4px; }
+  .entry-type-chip { padding: 4px 5px; font-size: 6px; }
+}
