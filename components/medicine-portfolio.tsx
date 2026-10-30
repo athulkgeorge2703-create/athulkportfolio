@@ -92,17 +92,18 @@ export function MedicinePortfolio() {
             <Image className="lucario-sprite" src="/lucario-aura-cutout.png" alt="" width={409} height={661} priority />
             <span className="aura-sphere" />
           </div>
+          <div className="dex-keychain" role="img" aria-label="Karate black belt and cycling keychain">
+            <span className="dex-keychain-ring" aria-hidden="true" />
+            <span className="dex-keychain-chain" aria-hidden="true" />
+            <span className="dex-keychain-charms" aria-hidden="true">
+              <span>🥋</span>
+              <span>🚴</span>
+            </span>
+          </div>
           <section className="entry-card" id="profile" aria-labelledby="entry-name">
           <div className="entry-topline">
             <span><span className="tiny-square" /> POKÉDEX / HUMAN FILE</span>
-            <span>NO. <strong>001</strong></span>
-            <span className="entry-status">
-              <span className="live-dot" aria-hidden="true" />
-              <span className="entry-type-chips" aria-label="Personal types">
-                <span className="entry-type-chip karate-type"><span aria-hidden="true">🥋</span> KARATE BLACK BELT</span>
-                <span className="entry-type-chip cyclist-type"><span aria-hidden="true">🚴</span> CYCLIST</span>
-              </span>
-            </span>
+            <span className="dex-entry-number">NO. <strong>001</strong></span>
           </div>
 
           <div className="entry-main">
