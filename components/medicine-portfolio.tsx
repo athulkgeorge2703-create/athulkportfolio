@@ -80,7 +80,7 @@ export function MedicinePortfolio() {
         <section className="intro" id="top" aria-labelledby="intro-title">
           <div className="intro-copy">
             <p className="eyebrow intro-eyebrow"><span className="live-dot" /> A LIVING RECORD · UPDATED [MONTH YEAR]</p>
-            <h1 id="intro-title">Portfolio<br /><em>with an entry.</em></h1>
+            <h1 id="intro-title">Portfolio</h1>
           </div>
           <a className="intro-link" href="#profile">
             Explore this entry <ArrowDownRight size={17} aria-hidden="true" />
