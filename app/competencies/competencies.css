@@ -185,3 +185,343 @@
 @media (prefers-reduced-motion: reduce) {
   .cf-page *, .cf-page *::before, .cf-page *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* Pokémon / Pokédex visual language shared with the homepage. */
+.cf-page {
+  color: #20384d;
+  font-family: 'Pixelify Sans', 'Courier New', monospace;
+  background-color: #e0e6c8;
+  background-image:
+    linear-gradient(rgb(242 240 232 / 48%), rgb(242 240 232 / 48%)),
+    url('/emerald-route-tile.png');
+  background-position: center, center;
+  background-size: auto, cover;
+  background-attachment: fixed, fixed;
+  background-repeat: no-repeat;
+}
+.cf-page,
+.cf-page :is(h1, h2, h3, p, a, span, small, strong, div) {
+  font-family: 'Pixelify Sans', 'Courier New', monospace;
+  letter-spacing: 0;
+}
+.cf-shell { width: min(1120px, calc(100% - 48px)); }
+.cf-header {
+  border-bottom: 2px solid #9fb5b6;
+}
+.cf-wordmark { color: #173e58; font-size: 16px; }
+.cf-wordmark-icon {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #a42b28;
+  border-radius: 6px;
+  color: #a42b28;
+  background: #fff8e8;
+  box-shadow: 2px 2px 0 #8f2826;
+}
+.cf-wordmark-dash { color: #c63832; }
+.cf-nav { color: #304f66; font-size: 13px; }
+.cf-nav a:hover, .cf-footer a:hover, .cf-nav a.is-active { color: #b72e2a; }
+.cf-nav a.is-active::after { height: 3px; background: #c63832; }
+.cf-header-index { color: #53758b; font-size: 10px; }
+.cf-hero { grid-template-columns: minmax(0, 1fr) 320px; gap: 40px; padding-top: 60px; }
+.cf-hero-copy {
+  position: relative;
+  padding: 23px 25px 25px;
+  border: 2px solid #a42b28;
+  border-radius: 12px;
+  background: rgb(255 248 232 / 96%);
+  box-shadow: 5px 5px 0 #8f2826, 0 16px 32px rgb(33 56 77 / 10%);
+}
+.cf-eyebrow { color: #245b82; font-size: 12px; }
+.cf-live-dot { background: #c63832; box-shadow: 0 0 0 3px rgb(198 56 50 / 15%); }
+.cf-kicker { margin-top: 22px; color: #5d6f61; font-size: 14px; }
+.cf-hero h1 {
+  margin-top: 12px;
+  color: #173e58;
+  font-size: clamp(39px, 5.2vw, 60px);
+  line-height: 1.12;
+}
+.cf-hero h1 em { color: #b72e2a; }
+.cf-hero-description { color: #3e596c; font-size: 16px; line-height: 1.65; }
+.cf-hero-link {
+  gap: 11px;
+  padding: 12px 15px;
+  border: 2px solid #9f2927;
+  border-radius: 5px;
+  color: #fff8e8;
+  background: #c63832;
+  box-shadow: 3px 3px 0 #8f2826;
+  font-size: 14px;
+}
+.cf-hero-link:hover {
+  transform: translate(2px, 2px);
+  color: #fff8e8;
+  background: #a62927;
+  box-shadow: 1px 1px 0 #8f2826;
+}
+.cf-hero-art { width: 292px; }
+.cf-orbit { border-color: rgb(37 91 130 / 35%); border-radius: 7px; }
+.cf-orbit-outer { border-style: dashed; border-color: rgb(198 56 50 / 58%); }
+.cf-orbit-middle { inset: 22px; border: 2px solid rgb(76 158 170 / 58%); border-radius: 50%; }
+.cf-orbit-inner { inset: 51px; border: 2px dashed rgb(240 206 105 / 90%); border-radius: 50%; }
+.cf-orbit-core {
+  width: 148px;
+  height: 148px;
+  border: 3px solid #a42b28;
+  border-radius: 50%;
+  color: #173e58;
+  background: #e3edf0;
+  box-shadow: inset 0 0 0 7px #fff8e8, 4px 4px 0 rgb(143 40 38 / 35%);
+}
+.cf-orbit-core span { font-size: 11px; }
+.cf-orbit-core strong { margin: 0; color: #c63832; font-size: 58px; }
+.cf-orbit-core small { color: #245b82; font-size: 10px; }
+.cf-orbit-caption { bottom: -22px; color: #315d77; font-size: 10px; }
+.cf-orbit-dot {
+  width: 13px;
+  height: 13px;
+  border: 2px solid #fff8e8;
+  border-radius: 3px;
+  background: #c63832;
+  box-shadow: 0 0 0 1px #a42b28;
+}
+.cf-dot-one { top: 27px; right: 62px; }
+.cf-dot-two { bottom: 48px; left: 23px; background: #4c9eaa; box-shadow: 0 0 0 1px #245b82; }
+.cf-dot-three { right: 16px; bottom: 84px; background: #f0ce69; box-shadow: 0 0 0 1px #9d742b; }
+.cf-roles-section { padding-top: 65px; }
+.cf-section-heading h2 { color: #173e58; font-size: clamp(26px, 3.2vw, 36px); line-height: 1.2; }
+.cf-section-heading > p { color: #425f70; font-size: 14px; line-height: 1.6; }
+.cf-role-grid { gap: 16px; }
+.cf-role-card {
+  min-height: 244px;
+  padding: 19px 20px 18px;
+  border: 2px solid #7898ae;
+  border-radius: 9px;
+  color: #20384d;
+  background: linear-gradient(160deg, rgb(255 248 232 / 98%), rgb(231 240 241 / 96%));
+  box-shadow: 4px 4px 0 #254d6a;
+  animation: cf-pixel-arrive .55s steps(5, end) both;
+}
+.cf-role-card::before {
+  width: 62px;
+  height: 62px;
+  border-bottom-left-radius: 0;
+  background: #f6dfc4;
+  clip-path: polygon(40% 0, 100% 0, 100% 60%, 60% 60%, 60% 100%, 0 100%, 0 40%, 40% 40%);
+}
+.cf-role-card:hover {
+  transform: translateY(-5px);
+  border-color: #c63832;
+  background: #fff8e8;
+  box-shadow: 6px 7px 0 #8f2826;
+}
+.cf-role-card:hover::before { transform: scale(1.2); background: #f0ce69; }
+.cf-role-card:active { transform: translateY(-1px) scale(.99); }
+.cf-role-card:focus-visible, .cf-evidence-card:focus-visible, .cf-activity-image:focus-visible { outline: 3px solid #f0ce69; outline-offset: 4px; }
+.cf-card-number { color: #c63832; font-size: 17px; }
+.cf-card-category { color: #4c6d80; font-size: 10px; }
+.cf-card-icon {
+  width: 37px;
+  height: 37px;
+  border: 2px solid #4c9eaa;
+  border-radius: 7px;
+  color: #245b82;
+  background: #e3f0ef;
+}
+.cf-role-card h3 {
+  max-width: 280px;
+  margin-top: 19px;
+  color: #173e58;
+  font-size: clamp(17px, 1.65vw, 21px);
+  line-height: 1.25;
+}
+.cf-role-card p { color: #425f70; font-size: 14px; line-height: 1.6; }
+.cf-card-action { color: #b72e2a; font-size: 13px; }
+.cf-detail-back { color: #4e6d7b; font-size: 11px; }
+.cf-detail-back a { color: #b72e2a; font-size: 13px; }
+.cf-detail-heading { padding: 28px 0 35px; }
+.cf-detail-emblem {
+  width: 106px;
+  height: 106px;
+  border: 3px solid #a42b28;
+  border-radius: 50%;
+  color: #173e58;
+  background: #e3edf0;
+  box-shadow: inset 0 0 0 7px #fff8e8, 4px 4px 0 rgb(143 40 38 / 35%);
+}
+.cf-detail-emblem span { color: #c63832; font-size: 32px; }
+.cf-detail-emblem small { color: #245b82; font-size: 10px; }
+.cf-detail-title-wrap h1 { color: #173e58; font-size: clamp(35px, 5.2vw, 58px); line-height: 1.15; }
+.cf-detail-title-wrap h1 span { color: #c63832; }
+.cf-detail-teaser { color: #425f70; font-size: 16px; line-height: 1.6; }
+.cf-core-panel {
+  padding: 26px 29px 28px;
+  border: 2px solid #7898ae;
+  border-left: 7px solid #c63832;
+  border-radius: 9px;
+  background: rgb(255 248 232 / 97%);
+  box-shadow: 4px 4px 0 #254d6a;
+}
+.cf-panel-label { color: #245b82; font-size: 11px; }
+.cf-panel-mark { width: 9px; height: 9px; background: #c63832; }
+.cf-core-panel h2 { color: #173e58; font-size: 27px; line-height: 1.2; }
+.cf-core-panel p { color: #344f62; font-size: 16px; line-height: 1.7; }
+.cf-focus-section { padding-top: 58px; }
+.cf-focus-item {
+  min-height: 98px;
+  border: 2px solid #b5c7c7;
+  border-radius: 7px;
+  background: rgb(255 248 232 / 93%);
+  box-shadow: 3px 3px 0 rgb(37 77 106 / 25%);
+  animation: cf-pixel-arrive .5s steps(5, end) both;
+}
+.cf-focus-check { border: 2px solid #4c9eaa; border-radius: 6px; color: #245b82; background: #e3f0ef; }
+.cf-focus-number { color: #b72e2a; font-size: 11px; }
+.cf-focus-item p { color: #344f62; font-size: 14px; line-height: 1.6; }
+.cf-reflection-panel {
+  border: 2px solid #95aa91;
+  border-radius: 7px;
+  background: #e6e9dc;
+  box-shadow: 3px 3px 0 rgb(37 77 106 / 20%);
+}
+.cf-reflection-index { color: #245b82; font-size: 10px; }
+.cf-reflection-panel p { color: #304f43; font-size: 15px; line-height: 1.6; }
+.cf-detail-pagination { border-color: #9fb5b6; }
+.cf-pagination-side span { color: #5c7888; font-size: 10px; }
+.cf-pagination-side strong { color: #245b82; font-size: 13px; }
+.cf-pagination-side:hover strong { color: #b72e2a; }
+.cf-pagination-all {
+  border: 2px solid #9f2927;
+  border-radius: 5px;
+  color: #fff8e8;
+  background: #c63832;
+  box-shadow: 2px 2px 0 #8f2826;
+  font-size: 10px;
+}
+.cf-pagination-all span { color: #f0ce69; }
+.cf-footer {
+  border-top: 2px solid #9fb5b6;
+  color: #4e6d7b;
+  font-size: 10px;
+}
+.cf-footer i { color: #c63832; }
+.cf-footer a { color: #245b82; }
+
+/* World Anatomy Day evidence belongs to the collaboration and leadership role. */
+.cf-activity-section {
+  display: grid;
+  grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr);
+  align-items: center;
+  gap: 25px;
+  margin-top: 25px;
+  padding: 23px;
+  border: 2px solid #a42b28;
+  border-radius: 10px;
+  background: rgb(255 248 232 / 97%);
+  box-shadow: 4px 4px 0 #8f2826;
+  animation: cf-pixel-arrive .55s steps(5, end) both;
+}
+.cf-activity-copy h2 {
+  margin: 10px 0 11px;
+  color: #173e58;
+  font-size: clamp(25px, 3vw, 33px);
+  line-height: 1.18;
+}
+.cf-activity-copy > p:not(.cf-eyebrow) {
+  margin: 0;
+  color: #3e596c;
+  font-size: 15px;
+  line-height: 1.65;
+}
+.cf-activity-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 16px; }
+.cf-activity-tags span {
+  padding: 5px 8px;
+  border: 1px solid #7b9daf;
+  border-radius: 4px;
+  color: #245b82;
+  background: #e3edf0;
+  font-size: 10px;
+}
+.cf-activity-copy .cf-activity-credit {
+  margin-top: 15px;
+  color: #6d776a;
+  font-size: 12px;
+}
+.cf-activity-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
+.cf-activity-image {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 2px solid #7898ae;
+  border-radius: 7px;
+  color: #173e58;
+  background: #e3edf0;
+  box-shadow: 3px 3px 0 #254d6a;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.cf-activity-image:first-child { grid-column: 1 / -1; }
+.cf-activity-image:hover {
+  transform: translateY(-4px);
+  border-color: #c63832;
+  box-shadow: 5px 6px 0 #8f2826;
+}
+.cf-activity-image-frame { display: grid; place-items: center; height: 135px; overflow: hidden; background: #d9e4e2; }
+.cf-activity-certificate .cf-activity-image-frame { height: 175px; background: #f7f3e8; }
+.cf-activity-image-frame img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s steps(4, end); }
+.cf-activity-image:hover img { transform: scale(1.04); }
+.cf-activity-certificate .cf-activity-image-frame img { padding: 7px; object-fit: contain; }
+.cf-activity-image > span { display: grid; gap: 3px; padding: 9px 10px; }
+.cf-activity-image small { color: #5d7a8d; font-size: 9px; }
+.cf-activity-image strong { color: #173e58; font-size: 12px; font-weight: 600; }
+@keyframes cf-pixel-arrive {
+  0% { opacity: 0; transform: translateY(10px); }
+  60% { opacity: 1; transform: translateY(-2px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@media (max-width: 900px) {
+  .cf-hero { grid-template-columns: minmax(0, 1fr) 270px; gap: 26px; }
+  .cf-activity-section { grid-template-columns: 1fr; }
+}
+@media (max-width: 650px) {
+  .cf-shell { width: min(100% - 30px, 520px); }
+  .cf-hero { grid-template-columns: 1fr; gap: 35px; padding-top: 42px; }
+  .cf-hero-copy { padding: 19px 17px 21px; }
+  .cf-hero h1 { font-size: clamp(38px, 11vw, 54px); }
+  .cf-hero-description { font-size: 15px; }
+  .cf-hero-art { width: 220px; }
+  .cf-role-grid { grid-template-columns: 1fr; }
+  .cf-role-card { min-height: 215px; }
+  .cf-role-card h3 { font-size: 21px; }
+  .cf-detail-heading { grid-template-columns: 68px minmax(0, 1fr); gap: 15px; }
+  .cf-detail-emblem { width: 66px; height: 66px; box-shadow: inset 0 0 0 5px #fff8e8, 3px 3px 0 rgb(143 40 38 / 35%); }
+  .cf-detail-emblem span { font-size: 21px; }
+  .cf-detail-title-wrap h1 { font-size: clamp(29px, 8vw, 42px); }
+  .cf-core-panel { padding: 19px 18px 21px; }
+  .cf-core-panel h2 { font-size: 22px; }
+  .cf-core-panel p { font-size: 15px; }
+  .cf-focus-grid { grid-template-columns: 1fr; }
+  .cf-focus-item { min-height: 80px; }
+  .cf-activity-section { gap: 19px; padding: 17px; }
+  .cf-activity-copy > p:not(.cf-eyebrow) { font-size: 14px; }
+  .cf-activity-gallery { grid-template-columns: 1fr 1fr; }
+  .cf-activity-image:first-child { grid-column: 1 / -1; }
+  .cf-activity-certificate .cf-activity-image-frame { height: 150px; }
+  .cf-activity-image-frame { height: 125px; }
+}
+@media (max-width: 420px) {
+  .cf-page { background-attachment: scroll, scroll; }
+  .cf-shell { width: calc(100% - 24px); }
+  .cf-header { gap: 12px; }
+  .cf-nav { gap: 8px; font-size: 10px; }
+  .cf-wordmark { font-size: 14px; }
+  .cf-section-heading h2 { font-size: 26px; }
+  .cf-role-card h3 { font-size: 19px; }
+  .cf-activity-gallery { grid-template-columns: 1fr; }
+  .cf-activity-image:first-child { grid-column: auto; }
+  .cf-activity-image-frame,
+  .cf-activity-certificate .cf-activity-image-frame { height: 160px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cf-role-card, .cf-focus-item, .cf-activity-section { animation: none; }
+}
