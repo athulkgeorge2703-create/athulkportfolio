@@ -525,3 +525,131 @@
 @media (prefers-reduced-motion: reduce) {
   .cf-role-card, .cf-focus-item, .cf-activity-section { animation: none; }
 }
+
+/* Portfolio progress: one personally completed competency is recorded as a fixed status. */
+.cf-roles-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #587064;
+  font-family: 'Pixelify Sans', 'Courier New', monospace;
+  font-size: 10px;
+  letter-spacing: .06em;
+}
+.cf-progress-count {
+  padding: 8px 10px;
+  border: 1px solid #b4c5ad;
+  border-radius: 3px;
+  color: #355d43;
+  background: #eff5e7;
+  box-shadow: 2px 2px 0 #a3b89f;
+  font-size: 15px;
+  font-weight: 700;
+}
+.cf-role-card.is-completed {
+  border-color: #75a779;
+  background: #edf6e9;
+  box-shadow: 4px 4px 0 #91b38b;
+}
+.cf-role-card.is-completed:hover {
+  border-color: #4e8b59;
+  background: #e4f1df;
+  box-shadow: 2px 2px 0 #75a779;
+}
+.cf-card-category.is-complete {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 6px;
+  border: 1px solid #83ad83;
+  border-radius: 3px;
+  color: #28613a;
+  background: #dcefd8;
+}
+.cf-role-card.is-completed .cf-card-icon {
+  border-color: #8eb892;
+  color: #28613a;
+  background: #dcefd8;
+}
+.cf-role-card.is-completed .cf-card-action { color: #28613a; }
+.cf-completion-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 0 0 22px;
+  padding: 14px 16px;
+  border: 1px solid #c3d0d5;
+  border-radius: 4px;
+  background: #eef3f2;
+  box-shadow: 3px 3px 0 rgb(37 77 106 / 12%);
+}
+.cf-completion-panel.is-completed {
+  border-color: #83ae83;
+  background: #e7f2e2;
+  box-shadow: 3px 3px 0 rgb(70 125 76 / 22%);
+}
+.cf-completion-copy { display: flex; align-items: center; gap: 11px; min-width: 0; }
+.cf-completion-icon {
+  display: grid;
+  flex: 0 0 auto;
+  width: 29px;
+  height: 29px;
+  place-items: center;
+  border: 1px solid #9fb6c0;
+  border-radius: 50%;
+  color: #456b80;
+  background: #dfeaf0;
+}
+.cf-completion-panel.is-completed .cf-completion-icon {
+  border-color: #6fa174;
+  color: #fff;
+  background: #4d9258;
+}
+.cf-completion-copy > span:last-child { display: grid; gap: 3px; }
+.cf-completion-copy strong {
+  color: #345d70;
+  font-family: 'Pixelify Sans', 'Courier New', monospace;
+  font-size: 13px;
+  letter-spacing: .05em;
+}
+.cf-completion-panel.is-completed .cf-completion-copy strong { color: #28613a; }
+.cf-completion-copy small { color: #687c7d; font-size: 11px; line-height: 1.45; }
+.cf-completion-panel.is-completed .cf-completion-copy small { color: #4e7553; }
+.cf-completion-stamp {
+  flex: 0 0 auto;
+  padding: 7px 9px;
+  border: 1px solid #77a77b;
+  border-radius: 4px;
+  color: #28613a;
+  background: #dcefd8;
+  font-family: 'Pixelify Sans', 'Courier New', monospace;
+  font-size: 10px;
+  letter-spacing: .05em;
+}
+.cf-activity-intro { margin: 0; color: #3e596c; font-size: 15px; line-height: 1.65; }
+.cf-activity-reflection {
+  margin-top: 20px;
+  padding: 15px 16px;
+  border: 1px solid #9db39e;
+  border-radius: 6px;
+  background: #e6e9dc;
+  box-shadow: 2px 2px 0 rgb(37 77 106 / 14%);
+}
+.cf-activity-reflection .cf-eyebrow { color: #245b82; }
+.cf-activity-reflection h3 {
+  margin: 6px 0 7px;
+  color: #173e58;
+  font-size: 19px;
+  line-height: 1.2;
+}
+.cf-activity-reflection p:last-child {
+  margin: 0;
+  color: #304f43;
+  font-size: 13px;
+  line-height: 1.7;
+}
+@media (max-width: 650px) {
+  .cf-completion-panel { align-items: flex-start; flex-direction: column; }
+  .cf-completion-stamp { align-self: flex-start; }
+}
