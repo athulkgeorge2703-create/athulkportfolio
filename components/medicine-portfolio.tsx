@@ -72,6 +72,7 @@ export function MedicinePortfolio() {
           <nav className="site-nav" aria-label="Portfolio navigation">
             <a href="#profile">Profile</a>
             <a href="#field-notes">Field notes</a>
+            <a href="/competencies">Competencies</a>
             <a href="#contact">Contact</a>
           </nav>
           <span className="header-index">PORTFOLIO / 001</span>
