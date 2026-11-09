@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import {
   Activity,
@@ -12,8 +14,11 @@ import {
   ShieldCheck,
   Sprout,
   UsersRound,
+  Check,
 } from 'lucide-react'
 import { competencies } from '@/data/competencies'
+
+const completedCompetencySlug = 'collaborator-innovator-and-leader'
 
 const roleIcons = [
   Brain,
@@ -37,8 +42,8 @@ function SiteHeader() {
       </Link>
       <nav className="cf-nav" aria-label="Portfolio navigation">
         <Link href="/#profile">Profile</Link>
-        <Link href="/#field-notes">Field notes</Link>
         <Link className="is-active" href="/competencies">Competencies</Link>
+        <Link href="/#field-notes">Field notes</Link>
         <Link href="/#contact">Contact</Link>
       </nav>
       <span className="cf-header-index">FIELD GUIDE / 002</span>
@@ -89,27 +94,33 @@ export function CompetenciesOverview() {
               <p className="cf-eyebrow">THE FRAMEWORK / 01—09</p>
               <h2 id="cf-roles-title">Choose a competency.</h2>
             </div>
-            <p>Each role opens into its own page with the core competency and the practical abilities it represents.</p>
+            <div className="cf-roles-progress" aria-live="polite">
+              <span className="cf-progress-count">01 / 09</span>
+              <span>COMPETENCY COMPLETED · 2026</span>
+            </div>
           </div>
 
           <div className="cf-role-grid">
             {competencies.map((role, index) => {
               const Icon = roleIcons[index]
+              const completed = role.slug === completedCompetencySlug
               return (
                 <Link
-                  className="cf-role-card"
+                  className={`cf-role-card${completed ? ' is-completed' : ''}`}
                   href={`/competencies/${role.slug}`}
                   key={role.slug}
                   style={{ animationDelay: `${index * 65}ms` }}
                 >
                   <div className="cf-card-topline">
                     <span className="cf-card-number">{role.number}</span>
-                    <span className="cf-card-category">POKÉDEX ENTRY</span>
+                    <span className={`cf-card-category${completed ? ' is-complete' : ''}`}>
+                      {completed ? <><Check size={11} strokeWidth={3} /> COMPLETED</> : 'POKÉDEX ENTRY'}
+                    </span>
                     <span className="cf-card-icon"><Icon size={19} strokeWidth={1.65} aria-hidden="true" /></span>
                   </div>
                   <h3>{role.title}</h3>
                   <p>{role.teaser}</p>
-                  <span className="cf-card-action">Explore role <ArrowUpRight size={16} aria-hidden="true" /></span>
+                  <span className="cf-card-action">{completed ? 'Review experience' : 'Explore role'} <ArrowUpRight size={16} aria-hidden="true" /></span>
                 </Link>
               )
             })}

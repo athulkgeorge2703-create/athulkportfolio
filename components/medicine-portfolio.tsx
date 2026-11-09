@@ -12,29 +12,29 @@ import {
 } from 'lucide-react'
 
 const fieldSkills = [
-  { label: '[Clinical skill]', note: 'Add a skill you can evidence' },
-  { label: '[Research interest]', note: 'A topic you are exploring' },
-  { label: '[Community work]', note: 'Where you show up' },
+  { label: 'Physiology & clinical foundations', note: 'Interested in how body systems work together and inform patient care.' },
+  { label: 'Neuroscience & the nervous system', note: 'Exploring neural signalling, sensation, reflexes and motor control.' },
+  { label: 'Physiotherapy & human movement', note: 'Curious about biomechanics, musculoskeletal function and rehabilitation.' },
 ]
 
 const highlights = [
   {
     icon: BriefcaseMedical,
     category: 'CLINICAL',
-    title: '[Rotation or placement]',
-    detail: '[Department] · [Month year – Month year]',
+    title: 'Clinical learning & placements',
+    detail: 'COMING SOON',
   },
   {
     icon: FlaskConical,
     category: 'RESEARCH',
-    title: '[Project, poster, or publication]',
-    detail: '[Your contribution] · [Year]',
+    title: 'Research & academic projects',
+    detail: 'COMING SOON',
   },
   {
     icon: HeartHandshake,
     category: 'SERVICE',
-    title: '[Community or volunteer role]',
-    detail: '[Who you served] · [Year]',
+    title: 'Community & service',
+    detail: 'COMING SOON',
   },
 ]
 
@@ -71,8 +71,8 @@ export function MedicinePortfolio() {
           </a>
           <nav className="site-nav" aria-label="Portfolio navigation">
             <a href="#profile">Profile</a>
-            <a href="#field-notes">Field notes</a>
             <a className="nav-competencies" href="/competencies">Competencies</a>
+            <a href="#field-notes">Field notes</a>
             <a href="#contact">Contact</a>
           </nav>
           <span className="header-index">PORTFOLIO / 001</span>
@@ -136,7 +136,7 @@ export function MedicinePortfolio() {
                 <a className="entry-cta" href="#field-notes">View field notes <ArrowUpRight size={16} aria-hidden="true" /></a>
                 <a className="entry-cta entry-cta--competencies" href="/competencies">
                   <span className="pokeball-mark" aria-hidden="true"><span /></span>
-                  Open Competency Pokédex
+                  Competencies
                   <ArrowUpRight size={16} aria-hidden="true" />
                 </a>
               </div>
@@ -180,12 +180,12 @@ export function MedicinePortfolio() {
                   </article>
                 ))}
               </div>
-              <p className="panel-footnote">Tip: link each entry to a case reflection, abstract, or project page.</p>
+              <p className="panel-footnote">New entries will appear here as experiences and projects take shape.</p>
             </div>
 
             <aside className="skills-panel" aria-labelledby="skills-title">
               <div className="panel-topline"><span>FIELD KIT</span><span>LOADOUT / 03</span></div>
-              <div className="skills-heading"><span className="skills-icon"><Stethoscope size={18} aria-hidden="true" /></span><div><p className="eyebrow">SIGNATURE STRENGTHS</p><h3 id="skills-title">What I bring</h3></div></div>
+              <div className="skills-heading"><span className="skills-icon"><Stethoscope size={18} aria-hidden="true" /></span><div><p className="eyebrow">SIGNATURE STRENGTHS · AREAS OF INTEREST</p><h3 id="skills-title">What I bring</h3></div></div>
               <div className="skill-list">
                 {fieldSkills.map((skill, index) => (
                   <div className="skill-item" key={skill.label}>
@@ -195,7 +195,7 @@ export function MedicinePortfolio() {
                   </div>
                 ))}
               </div>
-              <p className="skills-note">Keep it specific. Add the skills your experiences can back up.</p>
+              <p className="skills-note">Early interests I am building on as an MD Year 1 student.</p>
             </aside>
           </div>
         </section>
@@ -205,10 +205,10 @@ export function MedicinePortfolio() {
             <SectionHeading index="02" eyebrow="TRAINING LOG" title="The learning never stops." />
             <div className="education-entry">
               <span className="education-marker" aria-hidden="true" />
-              <div><p className="eyebrow">[START YEAR] — [EXPECTED YEAR]</p><h3>[Degree or qualification]</h3><p>[Institution] · [City]</p></div>
-              <span className="education-code">EDU / 01</span>
+              <div><p className="eyebrow">COMING SOON</p><h3>Education & training</h3><p>Academic details will be added here.</p></div>
+              <span className="education-code">EDU / SOON</span>
             </div>
-            <p className="education-footnote">Add your education, certifications, and relevant training here.</p>
+            <p className="education-footnote">The training log will grow alongside the journey.</p>
           </article>
 
           <aside className="contact-card" id="contact">
@@ -216,7 +216,7 @@ export function MedicinePortfolio() {
             <p className="eyebrow">OPEN CHANNEL</p>
             <h2>Good care starts<br />with a conversation.</h2>
             <p>For collaborations, mentorship, or a thoughtful hello.</p>
-            <a className="contact-link" href="mailto:your.email@example.com">your.email@example.com <ArrowUpRight size={16} aria-hidden="true" /></a>
+            <a className="contact-link" href="mailto:athulkgeorge2703@gmail.com">athulkgeorge2703@gmail.com <ArrowUpRight size={16} aria-hidden="true" /></a>
           </aside>
         </section>
 
