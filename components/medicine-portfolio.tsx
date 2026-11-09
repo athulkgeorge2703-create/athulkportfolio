@@ -72,7 +72,7 @@ export function MedicinePortfolio() {
           <nav className="site-nav" aria-label="Portfolio navigation">
             <a href="#profile">Profile</a>
             <a href="#field-notes">Field notes</a>
-            <a href="/competencies">Competencies</a>
+            <a className="nav-competencies" href="/competencies">Competencies</a>
             <a href="#contact">Contact</a>
           </nav>
           <span className="header-index">PORTFOLIO / 001</span>
@@ -132,7 +132,14 @@ export function MedicinePortfolio() {
                 <div><span className="fact-label">HABITAT</span><span><MapPin size={14} aria-hidden="true" /> UAE, Sharjah</span></div>
                 <div><span className="fact-label">INSTITUTION</span><span><BookOpen size={14} aria-hidden="true" /> GMU, Ajman</span></div>
               </div>
-              <a className="entry-cta" href="#field-notes">View field notes <ArrowUpRight size={16} aria-hidden="true" /></a>
+              <div className="entry-actions">
+                <a className="entry-cta" href="#field-notes">View field notes <ArrowUpRight size={16} aria-hidden="true" /></a>
+                <a className="entry-cta entry-cta--competencies" href="/competencies">
+                  <span className="pokeball-mark" aria-hidden="true"><span /></span>
+                  Open Competency Pokédex
+                  <ArrowUpRight size={16} aria-hidden="true" />
+                </a>
+              </div>
             </div>
           </div>
 

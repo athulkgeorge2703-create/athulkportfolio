@@ -1,10 +1,8 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import {
   Activity,
   ArrowDownRight,
   ArrowUpRight,
-  BookOpen,
   Brain,
   Globe2,
   HeartPulse,
@@ -29,29 +27,6 @@ const roleIcons = [
   Globe2,
 ]
 
-const anatomyEvidence = [
-  {
-    title: 'Certificate',
-    label: 'WORLD ANATOMY DAY',
-    src: '/world%20anatomy%20day%20certificate.jpg',
-    alt: 'World Anatomy Day participation certificate',
-    kind: 'certificate',
-  },
-  {
-    title: 'Event evidence 01',
-    label: 'WORLD ANATOMY DAY',
-    src: '/world%20anatomy%20day%20evidence.jpg',
-    alt: 'World Anatomy Day event evidence photograph',
-    kind: 'photo',
-  },
-  {
-    title: 'Event evidence 02',
-    label: 'WORLD ANATOMY DAY',
-    src: '/world%20anatomy%20day%20evidence_.jpeg',
-    alt: 'World Anatomy Day event evidence photograph',
-    kind: 'photo',
-  },
-]
 
 function SiteHeader() {
   return (
@@ -79,14 +54,15 @@ export function CompetenciesOverview() {
 
         <section className="cf-hero cf-enter" aria-labelledby="cf-title">
           <div className="cf-hero-copy">
-            <p className="cf-eyebrow"><span className="cf-live-dot" /> UAE MEDICAL EDUCATION · EMIRATESMEDs</p>
-            <p className="cf-kicker">A framework for the doctor I am learning to become.</p>
+            <p className="cf-eyebrow"><span className="cf-live-dot" /> TRAINER FIELD GUIDE · UAE MEDICAL EDUCATION</p>
+            <p className="cf-kicker">POKÉDEX FILE / EMIRATESMEDs FRAMEWORK</p>
             <h1 id="cf-title">The nine roles<br />behind <em>good medicine.</em></h1>
             <p className="cf-hero-description">
               The UAE Competency Framework for Medical Education brings together nine connected roles that shape the knowledge, judgement and values expected of medical graduates.
             </p>
             <a className="cf-hero-link" href="#nine-roles">
-              Explore the framework <ArrowDownRight size={17} aria-hidden="true" />
+              <span className="pokeball-mark" aria-hidden="true"><span /></span>
+              Choose your competency <ArrowDownRight size={17} aria-hidden="true" />
             </a>
           </div>
 
@@ -100,18 +76,12 @@ export function CompetenciesOverview() {
             <div className="cf-orbit-core">
               <span>UAE</span>
               <strong>9</strong>
-              <small>THEMATIC ROLES</small>
+              <small>DEX ENTRIES</small>
             </div>
             <span className="cf-orbit-caption">EMIRATESMEDs · 2023</span>
           </div>
         </section>
 
-        <section className="cf-framework-strip" aria-label="Framework overview">
-          <div><strong>09</strong><span>THEMATIC ROLES</span></div>
-          <div><strong>85</strong><span>ENABLING COMPETENCIES</span></div>
-          <div><strong>14</strong><span>ENTRUSTABLE ACTIVITIES</span></div>
-          <p>One connected framework. Many ways to make a difference.</p>
-        </section>
 
         <section className="cf-roles-section" id="nine-roles" aria-labelledby="cf-roles-title">
           <div className="cf-section-heading">
@@ -134,7 +104,7 @@ export function CompetenciesOverview() {
                 >
                   <div className="cf-card-topline">
                     <span className="cf-card-number">{role.number}</span>
-                    <span className="cf-card-category">THEMATIC ROLE</span>
+                    <span className="cf-card-category">POKÉDEX ENTRY</span>
                     <span className="cf-card-icon"><Icon size={19} strokeWidth={1.65} aria-hidden="true" /></span>
                   </div>
                   <h3>{role.title}</h3>
@@ -146,33 +116,10 @@ export function CompetenciesOverview() {
           </div>
         </section>
 
-        <section className="cf-evidence-section" aria-labelledby="cf-evidence-title">
-          <div className="cf-evidence-copy">
-            <p className="cf-eyebrow">PORTFOLIO RECORD / EVIDENCE 001</p>
-            <h2 id="cf-evidence-title">Learning beyond the lecture hall.</h2>
-            <p>
-              A small selection from World Anatomy Day, kept here as part of my medical learning record. Each item opens in a new tab for a closer look.
-            </p>
-            <span className="cf-evidence-note"><BookOpen size={15} /> DOCUMENTED EXPERIENCE</span>
-          </div>
-          <div className="cf-evidence-grid">
-            {anatomyEvidence.map((item) => (
-              <a className={`cf-evidence-card cf-evidence-${item.kind}`} href={item.src} target="_blank" rel="noreferrer" key={item.src}>
-                <div className="cf-evidence-image-wrap">
-                  <Image src={item.src} alt={item.alt} width={900} height={650} sizes="(max-width: 760px) 100vw, 30vw" />
-                </div>
-                <div className="cf-evidence-caption">
-                  <span><small>{item.label}</small><strong>{item.title}</strong></span>
-                  <ArrowUpRight size={16} aria-hidden="true" />
-                </div>
-              </a>
-            ))}
-          </div>
-        </section>
 
         <footer className="cf-footer">
-          <span>MED—DEX <i>/</i> COMPETENCY FIELD GUIDE</span>
-          <span>UAE · EMIRATESMEDs FRAMEWORK</span>
+          <span>MED—DEX <i>/</i> TRAINER FIELD GUIDE</span>
+          <span>UAE · NINE MEDICAL ROLES</span>
           <Link href="/">BACK TO PORTFOLIO ↑</Link>
         </footer>
       </div>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import {
   Activity,
@@ -40,7 +41,7 @@ export function CompetencyDetail({ competency }: { competency: Competency }) {
 
         <div className="cf-detail-back cf-enter">
           <Link href="/competencies"><ArrowLeft size={16} /> All nine competencies</Link>
-          <span>THEMATIC ROLE {competency.number} / 09</span>
+          <span>DEX ENTRY {competency.number} / 09</span>
         </div>
 
         <article className="cf-detail cf-enter" aria-labelledby="cf-detail-title">
@@ -50,7 +51,7 @@ export function CompetencyDetail({ competency }: { competency: Competency }) {
               <small>{competency.number}</small>
             </div>
             <div className="cf-detail-title-wrap">
-              <p className="cf-eyebrow">EMIRATESMEDs · THEME {competency.number}</p>
+              <p className="cf-eyebrow">POKÉDEX ENTRY · EMIRATESMEDs / {competency.number}</p>
               <h1 id="cf-detail-title">{competency.title}<span>.</span></h1>
               <p className="cf-detail-teaser">{competency.teaser}</p>
             </div>
@@ -61,6 +62,63 @@ export function CompetencyDetail({ competency }: { competency: Competency }) {
             <h2 id="cf-core-title">What this role means</h2>
             <p>{competency.coreCompetency}</p>
           </section>
+
+          {competency.slug === 'collaborator-innovator-and-leader' && (
+            <section className="cf-activity-section" aria-labelledby="cf-activity-title">
+              <div className="cf-activity-copy">
+                <p className="cf-eyebrow"><span className="cf-live-dot" /> TRAINER LOG · EVIDENCE 001</p>
+                <h2 id="cf-activity-title">World Anatomy Day</h2>
+                <p>
+                  I contributed to organising World Anatomy Day, working with a team to help bring an anatomy-focused event together. This experience gave me the opportunity to practise coordination, shared responsibility, initiative and collaboration.
+                </p>
+                <div className="cf-activity-tags" aria-label="Competency links">
+                  <span>TEAMWORK</span>
+                  <span>EVENT ORGANISATION</span>
+                  <span>INITIATIVE</span>
+                </div>
+                <p className="cf-activity-credit">Evidence: Certificate of Appreciation and event photographs.</p>
+              </div>
+
+              <div className="cf-activity-gallery">
+                <a className="cf-activity-image cf-activity-certificate" href="/world%20anatomy%20day%20certificate.jpg" target="_blank" rel="noreferrer">
+                  <div className="cf-activity-image-frame">
+                    <Image
+                      src="/world%20anatomy%20day%20certificate.jpg"
+                      alt="Certificate of Appreciation awarded for organising World Anatomy Day"
+                      width={1972}
+                      height={1390}
+                      sizes="(max-width: 760px) 100vw, 42vw"
+                    />
+                  </div>
+                  <span><small>OFFICIAL RECOGNITION</small><strong>Certificate of Appreciation</strong></span>
+                </a>
+                <a className="cf-activity-image" href="/world%20anatomy%20day%20evidence.jpg" target="_blank" rel="noreferrer">
+                  <div className="cf-activity-image-frame">
+                    <Image
+                      src="/world%20anatomy%20day%20evidence.jpg"
+                      alt="Photograph of event preparation for World Anatomy Day"
+                      width={960}
+                      height={1280}
+                      sizes="(max-width: 760px) 100vw, 24vw"
+                    />
+                  </div>
+                  <span><small>EVENT PREPARATION</small><strong>Behind the scenes</strong></span>
+                </a>
+                <a className="cf-activity-image" href="/world%20anatomy%20day%20evidence_.jpeg" target="_blank" rel="noreferrer">
+                  <div className="cf-activity-image-frame">
+                    <Image
+                      src="/world%20anatomy%20day%20evidence_.jpeg"
+                      alt="World Anatomy Day event team photograph"
+                      width={1280}
+                      height={960}
+                      sizes="(max-width: 760px) 100vw, 24vw"
+                    />
+                  </div>
+                  <span><small>TEAM EVIDENCE</small><strong>World Anatomy Day team</strong></span>
+                </a>
+              </div>
+            </section>
+          )}
 
           <section className="cf-focus-section" aria-labelledby="cf-focus-title">
             <div className="cf-section-heading">
@@ -101,8 +159,8 @@ export function CompetencyDetail({ competency }: { competency: Competency }) {
         </nav>
 
         <footer className="cf-footer">
-          <span>MED—DEX <i>/</i> COMPETENCY FIELD GUIDE</span>
-          <span>UAE · EMIRATESMEDs FRAMEWORK</span>
+          <span>MED—DEX <i>/</i> TRAINER FIELD GUIDE</span>
+          <span>UAE · NINE MEDICAL ROLES</span>
           <Link href="/">BACK TO PORTFOLIO <ArrowUpRight size={13} /></Link>
         </footer>
       </div>
