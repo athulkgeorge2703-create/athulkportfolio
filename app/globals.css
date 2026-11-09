@@ -617,3 +617,71 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .footer-vehicle-dock { height: 32px; margin: 14px 0 0; }
   .footer-evoque { width: 78px; }
 }
+
+/* Competencies entry point: a Pokédex-style button on the homepage. */
+.site-nav .nav-competencies {
+  padding: 7px 11px;
+  border: 1px solid #b72e2a;
+  border-radius: 4px;
+  color: #a62927;
+  background: #fff8e8;
+  box-shadow: 2px 2px 0 #8f2826;
+  font-family: 'Pixelify Sans', 'Nunito Sans', Arial, sans-serif;
+  font-size: 12px;
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+.site-nav .nav-competencies:hover {
+  color: #7e211f;
+  background: #f6e8c1;
+  box-shadow: 1px 1px 0 #8f2826;
+  transform: translate(1px, 1px);
+}
+.entry-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.entry-actions .entry-cta { margin-top: 19px; }
+.entry-cta--competencies {
+  gap: 9px;
+  border-color: #9d742b;
+  color: #4d3817;
+  background: #f0ce69;
+  box-shadow: 3px 3px 0 #8f2826;
+  font-family: 'Pixelify Sans', 'Nunito Sans', Arial, sans-serif;
+  font-size: 14px;
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+.entry-cta--competencies:hover {
+  color: #3b2a11;
+  background: #ffdc7b;
+  box-shadow: 1px 1px 0 #8f2826;
+  transform: translate(2px, 2px);
+}
+.pokeball-mark {
+  position: relative;
+  display: inline-grid;
+  width: 19px;
+  height: 19px;
+  flex: 0 0 auto;
+  place-items: center;
+  overflow: hidden;
+  border: 1.5px solid #20384d;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #d83b34 0 43%, #20384d 43% 56%, #fff8e8 56% 100%);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 22%);
+}
+.pokeball-mark > span {
+  width: 7px;
+  height: 7px;
+  border: 1.5px solid #20384d;
+  border-radius: 50%;
+  background: #fff8e8;
+  box-shadow: 0 0 0 1px rgb(255 255 255 / 55%);
+}
+@media (max-width: 760px) {
+  .entry-actions { gap: 8px; }
+  .entry-actions .entry-cta { margin-top: 15px; }
+  .entry-cta--competencies { font-size: 13px; }
+}
+@media (max-width: 420px) {
+  .site-nav .nav-competencies { padding: 5px 7px; font-size: 10px; }
+  .entry-actions { align-items: stretch; flex-direction: column; }
+  .entry-actions .entry-cta { width: fit-content; max-width: 100%; }
+}
