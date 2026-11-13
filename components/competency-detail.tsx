@@ -54,7 +54,7 @@ export function CompetencyDetail({ competency }: { competency: Competency }) {
               <small>{competency.number}</small>
             </div>
             <div className="cf-detail-title-wrap">
-              <p className="cf-eyebrow">POKÉDEX ENTRY · EMIRATESMEDs / {competency.number}</p>
+              <p className="cf-eyebrow">EMIRATESMEDs FRAMEWORK / {competency.number}</p>
               <h1 id="cf-detail-title">{competency.title}<span>.</span></h1>
               <p className="cf-detail-teaser">{competency.teaser}</p>
             </div>

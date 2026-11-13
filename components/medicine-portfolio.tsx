@@ -216,16 +216,6 @@ export function MedicinePortfolio() {
           </aside>
         </section>
 
-        <div className="footer-vehicle-dock">
-          <Image
-            className="footer-evoque"
-            src="/range-rover-evoque-side-profile.png"
-            alt="White pixel-art Range Rover Evoque shown from the right side"
-            width={896}
-            height={362}
-            sizes="(max-width: 420px) 78px, (max-width: 760px) 88px, 104px"
-          />
-        </div>
         <footer className="page-footer">
           <span>MED-DEX <span className="footer-divider">/</span> A PERSONAL FIELD GUIDE</span>
           <span>MADE WITH CARE, BY ATHUL KOCHITTY GEORGE</span>

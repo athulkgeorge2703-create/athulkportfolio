@@ -90,7 +90,7 @@ export function CompetenciesOverview() {
 
         <section className="cf-roles-section" id="nine-roles" aria-labelledby="cf-roles-title">
           <div className="cf-section-heading">
-            <div>
+            <div className="cf-roles-title-box">
               <p className="cf-eyebrow">THE FRAMEWORK / 01—09</p>
               <h2 id="cf-roles-title">Choose a competency.</h2>
             </div>
@@ -112,10 +112,12 @@ export function CompetenciesOverview() {
                   style={{ animationDelay: `${index * 65}ms` }}
                 >
                   <div className="cf-card-topline">
-                    <span className="cf-card-number">{role.number}</span>
-                    <span className={`cf-card-category${completed ? ' is-complete' : ''}`}>
-                      {completed ? <><Check size={11} strokeWidth={3} /> COMPLETED</> : 'POKÉDEX ENTRY'}
-                    </span>
+                    <span className="cf-card-number" data-number={role.number}>{role.number}</span>
+                    {completed && (
+                      <span className="cf-card-category is-complete">
+                        <Check size={11} strokeWidth={3} /> COMPLETED
+                      </span>
+                    )}
                     <span className="cf-card-icon"><Icon size={19} strokeWidth={1.65} aria-hidden="true" /></span>
                   </div>
                   <h3>{role.title}</h3>

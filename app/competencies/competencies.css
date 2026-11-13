@@ -653,3 +653,132 @@
   .cf-completion-panel { align-items: flex-start; flex-direction: column; }
   .cf-completion-stamp { align-self: flex-start; }
 }
+
+.cf-nav a {
+  padding: 7px 10px;
+  border: 2px solid #9f2927;
+  border-radius: 5px;
+  color: #173e58;
+  background: #fff8e8;
+  box-shadow: 2px 2px 0 #8f2826;
+  font-size: 12px;
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+.cf-nav a:hover {
+  color: #7e211f;
+  background: #f6e8c1;
+  box-shadow: 1px 1px 0 #8f2826;
+  transform: translate(1px, 1px);
+}
+.cf-nav a.is-active {
+  border-color: #8f2826;
+  color: #fff8e8;
+  background: #c63832;
+  box-shadow: 2px 2px 0 #8f2826;
+}
+.cf-nav a.is-active:hover { color: #fff8e8; background: #a62927; }
+.cf-nav a.is-active::after { display: none; }
+
+.cf-roles-section > .cf-section-heading {
+  align-items: stretch;
+  margin-bottom: 24px;
+}
+.cf-roles-title-box {
+  padding: 16px 19px;
+  border: 2px solid #a42b28;
+  border-radius: 9px;
+  background: #fff8e8;
+  box-shadow: 4px 4px 0 #8f2826;
+}
+.cf-roles-title-box .cf-eyebrow { color: #245b82; }
+.cf-roles-title-box h2 { margin-top: 5px; }
+.cf-roles-progress {
+  align-self: stretch;
+  justify-content: center;
+  padding: 12px 14px;
+  border: 2px solid #6d9c71;
+  border-radius: 9px;
+  color: #28613a;
+  background: #e7f2e2;
+  box-shadow: 4px 4px 0 #91b38b;
+  font-size: 12px;
+}
+.cf-progress-count {
+  border: 2px solid #6d9c71;
+  border-radius: 5px;
+  color: #28613a;
+  background: #f5f9ee;
+  box-shadow: 2px 2px 0 #91b38b;
+}
+.cf-role-card.is-completed {
+  border-color: #28613a;
+  color: #fff8e8;
+  background: linear-gradient(150deg, #438b50, #327444);
+  box-shadow: 4px 4px 0 #245a34;
+}
+.cf-role-card.is-completed::before { background: #6aad69; }
+.cf-role-card.is-completed:hover {
+  border-color: #245a34;
+  color: #fff8e8;
+  background: linear-gradient(150deg, #438b50, #327444);
+  box-shadow: 2px 2px 0 #245a34;
+}
+.cf-role-card.is-completed h3 { color: #fff8e8; }
+.cf-role-card.is-completed p { color: #e7f3e4; }
+.cf-role-card.is-completed .cf-card-number {
+  color: #fff8e8;
+  text-shadow: 1px 1px 0 #245a34;
+}
+.cf-card-number[data-number="05"] {
+  color: #c63832;
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-shadow: 1px 1px 0 #f0ce69;
+}
+.cf-role-card.is-completed .cf-card-number[data-number="05"] {
+  color: #fff8e8;
+  text-shadow: 1px 1px 0 #245a34;
+}
+.cf-role-card.is-completed .cf-card-icon {
+  border-color: #d2e9cb;
+  color: #28613a;
+  background: #f2f8ea;
+}
+.cf-role-card.is-completed .cf-card-category.is-complete {
+  border-color: #d2e9cb;
+  color: #245a34;
+  background: #f2f8ea;
+}
+.cf-role-card.is-completed .cf-card-action { color: #fff8e8; }
+.cf-footer a {
+  padding: 9px 12px;
+  border: 2px solid #9f2927;
+  border-radius: 5px;
+  color: #173e58;
+  background: #fff8e8;
+  box-shadow: 3px 3px 0 #8f2826;
+  font-size: 12px;
+  letter-spacing: .02em;
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+.cf-footer a:hover {
+  color: #7e211f;
+  background: #f6e8c1;
+  box-shadow: 1px 1px 0 #8f2826;
+  transform: translate(2px, 2px);
+}
+@media (max-width: 650px) {
+  .cf-nav { gap: 8px; }
+  .cf-nav a { padding: 6px 7px; font-size: 10px; }
+  .cf-roles-section > .cf-section-heading { gap: 14px; }
+  .cf-roles-title-box { padding: 14px; }
+  .cf-roles-progress { flex-wrap: wrap; gap: 8px; padding: 11px; }
+  .cf-footer a { padding: 8px 9px; font-size: 10px; }
+}
+@media (max-width: 420px) {
+  .cf-nav { gap: 5px; }
+  .cf-nav a { padding: 5px 5px; font-size: 9px; }
+  .cf-roles-progress { font-size: 10px; }
+}
