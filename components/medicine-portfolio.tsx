@@ -89,10 +89,6 @@ export function MedicinePortfolio() {
         </section>
 
         <div className="dex-stage">
-          <div className="lucario-companion" aria-hidden="true">
-            <Image className="lucario-sprite" src="/lucario-aura-cutout.png" alt="" width={409} height={661} priority />
-            <span className="aura-sphere" />
-          </div>
           <div className="dex-keychain" role="img" aria-label="Karate black belt and cycling keychain">
             <span className="dex-keychain-ring" aria-hidden="true" />
             <span className="dex-keychain-chain" aria-hidden="true" />

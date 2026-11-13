@@ -366,7 +366,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .specimen-frame { border-color: #7189a0; background: #d7e8f5; }
 .specimen-label, .specimen-caption { color: #456078; }
 .specimen-image { image-rendering: pixelated; }
-.entry-card .specimen-image, .lucario-sprite { image-rendering: pixelated; }
+.entry-card .specimen-image { image-rendering: pixelated; }
 .entry-copy {
   padding: 19px;
   border: 5px solid #607b92;
@@ -465,108 +465,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .dex-stage {
   position: relative;
-  padding-left: clamp(78px, 10vw, 140px);
-}
-.lucario-companion {
-  position: absolute;
-  top: 34%;
-  left: 0;
-  z-index: 2;
-  width: clamp(64px, 9vw, 108px);
-  aspect-ratio: 409 / 661;
-  pointer-events: none;
-  transform: translateY(-50%);
-}
-.lucario-sprite {
-  position: relative;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  image-rendering: pixelated;
-  animation: lucario-charge 1.2s steps(2, end) infinite;
-}
-.lucario-companion::after {
-  position: absolute;
-  right: 14%;
-  bottom: 1%;
-  left: 14%;
-  height: 6%;
-  border-radius: 50%;
-  background: rgb(17 42 31 / 24%);
-  content: '';
-  filter: blur(3px);
-  animation: lucario-shadow 1.2s ease-in-out infinite;
-}
-.aura-sphere {
-  position: absolute;
-  top: 33%;
-  left: 73%;
-  z-index: 2;
-  width: 26%;
-  aspect-ratio: 1;
-  border: 1px solid rgb(228 250 255 / 92%);
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 32%, #f1ffff 0 12%, #a8edff 22%, #40aefa 53%, #2565d7 78%, #163b91 100%);
-  box-shadow: 0 0 7px 3px rgb(83 190 255 / 72%), 0 0 17px 7px rgb(63 139 255 / 42%);
-  animation: aura-charge 1.35s ease-in-out infinite;
-}
-.aura-sphere::after {
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background:
-    linear-gradient(#f1ffff 0 0) 25% 24% / 16% 16%,
-    linear-gradient(#c7f5ff 0 0) 43% 19% / 12% 12%,
-    linear-gradient(#77d8ff 0 0) 69% 52% / 15% 15%,
-    linear-gradient(#4b9df0 0 0) 54% 75% / 12% 12%;
-  background-repeat: no-repeat;
-  content: '';
-  image-rendering: pixelated;
-  opacity: .72;
-}
-.aura-sphere::before {
-  position: absolute;
-  inset: -34%;
-  border: 1px solid rgb(139 221 255 / 72%);
-  border-radius: 50%;
-  content: '';
-  animation: aura-ring 1.35s ease-out infinite;
-}
-@keyframes lucario-charge {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
-}
-@keyframes lucario-shadow {
-  0%, 100% { opacity: .78; transform: scaleX(1); }
-  50% { opacity: .48; transform: scaleX(.84); }
-}
-@keyframes aura-charge {
-  0%, 100% { opacity: .82; transform: scale(.88); }
-  50% { opacity: 1; transform: scale(1.12); }
-}
-@keyframes aura-ring {
-  0% { opacity: .85; transform: scale(.72); }
-  100% { opacity: 0; transform: scale(1.4); }
 }
 
 @media (max-width: 760px) {
-  .dex-stage { padding-left: clamp(54px, 15vw, 76px); }
-  .lucario-companion { top: 50%; width: clamp(50px, 14vw, 68px); }
-
   .dex-keychain { right: -10px; transform: scale(.9); transform-origin: top right; }
 }
 
 @media (max-width: 420px) {
   .entry-topline { flex-wrap: wrap; gap: 8px; padding: 8px 0; }
   .dex-keychain { right: -7px; transform: scale(.78); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .lucario-sprite,
-  .lucario-companion::after,
-  .aura-sphere,
-  .aura-sphere::before { animation: none; }
 }
 
 .entry-card,
