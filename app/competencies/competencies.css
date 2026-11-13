@@ -2,7 +2,7 @@
   min-height: 100vh;
   overflow: hidden;
   color: #1a2c24;
-  background-color: #f2f0e8;
+  background-color: #e6e5dc;
 }
 .cf-shell { width: min(1080px, calc(100% - 48px)); margin: 0 auto; }
 .cf-header { min-height: 77px; display: flex; align-items: center; gap: 28px; border-bottom: 1px solid #d5d6cb; }
@@ -183,17 +183,23 @@
   .cf-page *, .cf-page *::before, .cf-page *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
 
-/* Pokémon / Pokédex visual language shared with the homepage. */
+/* Pixel lettering is reserved for small interface labels; content uses a more legible body face. */
 .cf-page {
   color: #20384d;
-  font-family: 'Pixelify Sans', 'Courier New', monospace;
-  background-color: #f2f0e8;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  background-color: #e6e5dc;
   background-image: none;
 }
 .cf-page,
 .cf-page :is(h1, h2, h3, p, a, span, small, strong, div) {
-  font-family: 'Pixelify Sans', 'Courier New', monospace;
+  font-family: 'Nunito Sans', Arial, sans-serif;
   letter-spacing: 0;
+}
+.cf-page .cf-nav,
+.cf-page .cf-eyebrow,
+.cf-page .cf-card-category,
+.cf-page .cf-card-action {
+  font-family: 'Pixelify Sans', 'Courier New', monospace;
 }
 .cf-shell { width: min(1120px, calc(100% - 48px)); }
 .cf-header {
@@ -771,4 +777,55 @@
   .cf-nav { gap: 5px; }
   .cf-nav a { padding: 5px 5px; font-size: 9px; }
   .cf-roles-progress { font-size: 10px; }
+}
+
+.cf-card-number,
+.cf-detail-emblem small,
+.cf-completion-stamp,
+.cf-progress-count {
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+.cf-card-number { font-weight: 900; }
+.cf-card-number[data-number="05"] {
+  display: inline-flex;
+  min-width: 2.2em;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 5px;
+  border: 1px solid currentColor;
+  border-radius: 3px;
+  font-size: 17px;
+  line-height: 1.1;
+  text-shadow: none;
+  background-color: rgb(255 248 232 / 16%);
+}
+.cf-role-card.is-completed .cf-card-number[data-number="05"] {
+  color: #fff8e8;
+  text-shadow: none;
+}
+.cf-detail-emblem small {
+  color: #173e58;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .02em;
+}
+.cf-completion-stamp { font-size: 11px; font-weight: 900; }
+.cf-progress-count { font-size: 13px; font-weight: 900; }
+.cf-event-date {
+  display: inline-flex;
+  align-items: center;
+  margin: 2px 3px;
+  padding: 3px 8px;
+  border: 2px solid #477f50;
+  border-radius: 4px;
+  color: #245a34;
+  background: #e7f2e2;
+  box-shadow: 2px 2px 0 #91b38b;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-size: .96em;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+  white-space: nowrap;
 }

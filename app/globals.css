@@ -47,7 +47,7 @@
 
 :root {
   color-scheme: light;
-  --background: #f2f0e8;
+  --background: #e6e5dc;
   --foreground: #1a2c24;
   --card: #fffdf7;
   --card-foreground: #1a2c24;
@@ -100,7 +100,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .portfolio-page {
   min-height: 100vh;
   overflow: hidden;
-  background-color: #f2f0e8;
+  background-color: #e6e5dc;
 }
 .page-shell { width: min(1080px, calc(100% - 48px)); margin: 0 auto; }
 .site-header { min-height: 77px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #d5d6cb; }
@@ -191,7 +191,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .panel-topline { display: flex; align-items: center; justify-content: space-between; min-height: 43px; border-bottom: 1px solid #e3e2d9; color: #8a8e80; font-size: 9px; letter-spacing: .1em; }
 .highlight-row { display: grid; grid-template-columns: 22px 38px minmax(0, 1fr) 18px; align-items: center; gap: 12px; min-height: 91px; border-bottom: 1px solid #e8e7df; }
 .highlight-row:last-child { border-bottom: 0; }
-.highlight-number { align-self: start; padding-top: 24px; color: #a3a696; font-size: 9px; }
+.highlight-number { align-self: start; padding-top: 24px; color: #657166; font-size: 10px; font-weight: 900; font-variant-numeric: tabular-nums; }
 .highlight-icon { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid #d9ded2; border-radius: 50%; color: #55735d; background: #f1f2e9; }
 .highlight-content .eyebrow { font-size: 9px; }
 .highlight-content h3 { margin: 3px 0 3px; color: #2c4436; font-family: 'Nunito Sans', Arial, sans-serif; font-size: 15px; font-weight: 400; }
