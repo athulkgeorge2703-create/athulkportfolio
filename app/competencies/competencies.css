@@ -199,7 +199,7 @@
 .cf-page .cf-eyebrow,
 .cf-page .cf-card-category,
 .cf-page .cf-card-action {
-  font-family: 'Pixelify Sans', 'Courier New', monospace;
+  font-family: 'Nunito Sans', Arial, sans-serif;
 }
 .cf-shell { width: min(1120px, calc(100% - 48px)); }
 .cf-header {
@@ -528,7 +528,7 @@
   align-items: center;
   gap: 10px;
   color: #587064;
-  font-family: 'Pixelify Sans', 'Courier New', monospace;
+  font-family: 'Nunito Sans', Arial, sans-serif;
   font-size: 10px;
   letter-spacing: .06em;
 }
@@ -605,7 +605,7 @@
 .cf-completion-copy > span:last-child { display: grid; gap: 3px; }
 .cf-completion-copy strong {
   color: #345d70;
-  font-family: 'Pixelify Sans', 'Courier New', monospace;
+  font-family: 'Nunito Sans', Arial, sans-serif;
   font-size: 13px;
   letter-spacing: .05em;
 }
@@ -619,7 +619,7 @@
   border-radius: 4px;
   color: #28613a;
   background: #dcefd8;
-  font-family: 'Pixelify Sans', 'Courier New', monospace;
+  font-family: 'Nunito Sans', Arial, sans-serif;
   font-size: 10px;
   letter-spacing: .05em;
 }
@@ -727,7 +727,7 @@
 }
 .cf-card-number[data-number="05"] {
   color: #c63832;
-  font-family: 'Courier New', monospace;
+  font-family: 'Nunito Sans', Arial, sans-serif;
   font-size: 18px;
   font-weight: 900;
   letter-spacing: 0;

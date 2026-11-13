@@ -250,7 +250,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .footer-divider { padding: 0 4px; color: #d96c50; }
 .page-footer a { color: #135c8d; font-size: 13px; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
 .intro h1, .section-heading h2, .contact-card h2 {
-  font-family: 'Pixelify Sans', 'Nunito Sans', Arial, sans-serif;
+  font-family: 'Nunito Sans', Arial, sans-serif;
   font-weight: 500;
   letter-spacing: 0;
 }
@@ -438,7 +438,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   grid-row: 2;
   justify-self: center;
   color: #ffe1d3;
-  font: 700 8px 'Courier New', monospace;
+  font: 700 8px 'Pixelify Sans', sans-serif;
   letter-spacing: .12em;
 }
 
@@ -498,7 +498,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   color: #a62927;
   background: #fff8e8;
   box-shadow: 2px 2px 0 #8f2826;
-  font-family: 'Pixelify Sans', 'Nunito Sans', Arial, sans-serif;
+  font-family: 'Nunito Sans', Arial, sans-serif;
   font-size: 12px;
   transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
 }
@@ -565,7 +565,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   color: #173e58;
   background: #fff8e8;
   box-shadow: 2px 2px 0 #254d6a;
-  font-family: 'Pixelify Sans', 'Nunito Sans', Arial, sans-serif;
+  font-family: 'Nunito Sans', Arial, sans-serif;
   font-size: 12px;
   transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
 }
