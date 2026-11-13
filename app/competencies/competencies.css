@@ -3,9 +3,6 @@
   overflow: hidden;
   color: #1a2c24;
   background-color: #f2f0e8;
-  background-image:
-    radial-gradient(circle at 12% 8%, rgb(40 103 141 / 7%), transparent 27rem),
-    radial-gradient(circle at 92% 34%, rgb(217 108 80 / 5%), transparent 25rem);
 }
 .cf-shell { width: min(1080px, calc(100% - 48px)); margin: 0 auto; }
 .cf-header { min-height: 77px; display: flex; align-items: center; gap: 28px; border-bottom: 1px solid #d5d6cb; }
@@ -190,14 +187,8 @@
 .cf-page {
   color: #20384d;
   font-family: 'Pixelify Sans', 'Courier New', monospace;
-  background-color: #e0e6c8;
-  background-image:
-    linear-gradient(rgb(242 240 232 / 48%), rgb(242 240 232 / 48%)),
-    url('/emerald-route-tile.png');
-  background-position: center, center;
-  background-size: auto, cover;
-  background-attachment: fixed, fixed;
-  background-repeat: no-repeat;
+  background-color: #f2f0e8;
+  background-image: none;
 }
 .cf-page,
 .cf-page :is(h1, h2, h3, p, a, span, small, strong, div) {
@@ -510,7 +501,6 @@
   .cf-activity-image-frame { height: 125px; }
 }
 @media (max-width: 420px) {
-  .cf-page { background-attachment: scroll, scroll; }
   .cf-shell { width: calc(100% - 24px); }
   .cf-header { gap: 12px; }
   .cf-nav { gap: 8px; font-size: 10px; }
