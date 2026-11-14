@@ -296,7 +296,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .page-footer { font-size: 11px; }
 }
 
-/* Pokédex-inspired hardware treatment for the medical portfolio entry. */
+/* Med-Dex-inspired hardware treatment for the medical portfolio entry. */
 .entry-card {
   padding: 0 26px 9px;
   border: 2px solid #a42b28;
@@ -490,7 +490,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 760px) {
   .entry-card .entry-copy h2 { font-size: clamp(30px, 8vw, 36px); }
 }
-/* Competencies entry point: a Pokédex-style button on the homepage. */
+/* Competencies entry point: a Med-Dex-style button on the homepage. */
 .site-nav .nav-competencies {
   padding: 7px 11px;
   border: 1px solid #b72e2a;

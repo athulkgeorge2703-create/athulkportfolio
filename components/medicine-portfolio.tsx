@@ -99,7 +99,7 @@ export function MedicinePortfolio() {
           </div>
           <section className="entry-card" id="profile" aria-labelledby="entry-name">
           <div className="entry-topline">
-            <span><span className="tiny-square" /> POKÉDEX / HUMAN FILE</span>
+            <span><span className="tiny-square" /> MED-DEX / HUMAN FILE</span>
             <span className="dex-entry-number">NO. <strong>001</strong></span>
           </div>
 
@@ -109,7 +109,7 @@ export function MedicinePortfolio() {
               <Image
                 className="specimen-image"
                 src="/clinical-dex-sprite-blue.png"
-                alt="Pixel-art Pokédex specimen: a stethoscope curled around ginkgo leaves and a capsule"
+                alt="Pixel-art Med-Dex specimen: a stethoscope curled around ginkgo leaves and a capsule"
                 width={800}
                 height={600}
                 priority

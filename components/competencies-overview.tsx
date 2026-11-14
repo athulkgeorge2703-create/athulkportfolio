@@ -60,7 +60,7 @@ export function CompetenciesOverview() {
         <section className="cf-hero cf-enter" aria-labelledby="cf-title">
           <div className="cf-hero-copy">
             <p className="cf-eyebrow"><span className="cf-live-dot" /> TRAINER FIELD GUIDE · UAE MEDICAL EDUCATION</p>
-            <p className="cf-kicker">POKÉDEX FILE / EMIRATESMEDs FRAMEWORK</p>
+            <p className="cf-kicker">MED-DEX FILE / EMIRATESMEDs FRAMEWORK</p>
             <h1 id="cf-title">The nine roles<br />behind <em>good medicine.</em></h1>
             <p className="cf-hero-description">
               The UAE Competency Framework for Medical Education brings together nine connected roles that shape the knowledge, judgement and values expected of medical graduates.
