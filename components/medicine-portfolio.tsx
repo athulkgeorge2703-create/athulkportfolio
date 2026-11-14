@@ -108,10 +108,10 @@ export function MedicinePortfolio() {
               <div className="specimen-label"><span>FIG. 01</span><span>FIELD SPECIMEN</span></div>
               <Image
                 className="specimen-image"
-                src="/clinical-dex-sprite-blue.png"
-                alt="Pixel-art Med-Dex specimen: a stethoscope curled around ginkgo leaves and a capsule"
-                width={800}
-                height={600}
+                src="/med-dex-portrait.jpg"
+                alt="Portrait of the portfolio owner wearing glasses and a navy turtleneck"
+                width={3028}
+                height={4055}
                 priority
               />
               <div className="specimen-caption"><Stethoscope size={14} aria-hidden="true" /> CARE, CURIOSITY &amp; CLINICAL PRACTICE</div>

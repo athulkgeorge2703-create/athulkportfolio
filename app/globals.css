@@ -135,7 +135,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .entry-main { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); align-items: center; gap: clamp(34px, 6vw, 78px); padding: 27px 9px 33px; }
 .specimen-frame { position: relative; padding: 12px; border: 1px solid rgb(216 225 207 / 25%); background: #dfe3d5; color: #314b3d; }
 .specimen-label { display: flex; justify-content: space-between; padding: 0 2px 9px; color: #68796b; font-size: 9px; letter-spacing: .06em; }
-.specimen-image { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.specimen-image { display: block; width: 100%; height: auto; aspect-ratio: 3028 / 4055; object-fit: contain; }
 .specimen-caption { display: flex; align-items: center; gap: 8px; padding: 10px 2px 0; color: #526854; font-size: 9px; letter-spacing: .03em; }
 .entry-copy { padding: 2px 0; }
 .entry-tags { display: flex; flex-wrap: wrap; gap: 7px; }
