@@ -47,7 +47,7 @@
 
 :root {
   color-scheme: light;
-  --background: #f2f0e8;
+  --background: #e6e5dc;
   --foreground: #1a2c24;
   --card: #fffdf7;
   --card-foreground: #1a2c24;
@@ -100,12 +100,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .portfolio-page {
   min-height: 100vh;
   overflow: hidden;
-  background-color: #e0e6c8;
-  background-image: linear-gradient(rgb(242 240 232 / 48%), rgb(242 240 232 / 48%)), url('/emerald-route-tile.png');
-  background-position: center, center;
-  background-size: auto, cover;
-  background-attachment: fixed, fixed;
-  background-repeat: no-repeat;
+  background-color: #e6e5dc;
 }
 .page-shell { width: min(1080px, calc(100% - 48px)); margin: 0 auto; }
 .site-header { min-height: 77px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #d5d6cb; }
@@ -140,7 +135,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .entry-main { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); align-items: center; gap: clamp(34px, 6vw, 78px); padding: 27px 9px 33px; }
 .specimen-frame { position: relative; padding: 12px; border: 1px solid rgb(216 225 207 / 25%); background: #dfe3d5; color: #314b3d; }
 .specimen-label { display: flex; justify-content: space-between; padding: 0 2px 9px; color: #68796b; font-size: 9px; letter-spacing: .06em; }
-.specimen-image { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.specimen-image { display: block; width: 100%; height: auto; aspect-ratio: 3028 / 4055; object-fit: contain; }
 .specimen-caption { display: flex; align-items: center; gap: 8px; padding: 10px 2px 0; color: #526854; font-size: 9px; letter-spacing: .03em; }
 .entry-copy { padding: 2px 0; }
 .entry-tags { display: flex; flex-wrap: wrap; gap: 7px; }
@@ -196,7 +191,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .panel-topline { display: flex; align-items: center; justify-content: space-between; min-height: 43px; border-bottom: 1px solid #e3e2d9; color: #8a8e80; font-size: 9px; letter-spacing: .1em; }
 .highlight-row { display: grid; grid-template-columns: 22px 38px minmax(0, 1fr) 18px; align-items: center; gap: 12px; min-height: 91px; border-bottom: 1px solid #e8e7df; }
 .highlight-row:last-child { border-bottom: 0; }
-.highlight-number { align-self: start; padding-top: 24px; color: #a3a696; font-size: 9px; }
+.highlight-number { align-self: start; padding-top: 24px; color: #657166; font-size: 10px; font-weight: 900; font-variant-numeric: tabular-nums; }
 .highlight-icon { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid #d9ded2; border-radius: 50%; color: #55735d; background: #f1f2e9; }
 .highlight-content .eyebrow { font-size: 9px; }
 .highlight-content h3 { margin: 3px 0 3px; color: #2c4436; font-family: 'Nunito Sans', Arial, sans-serif; font-size: 15px; font-weight: 400; }
@@ -255,7 +250,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .footer-divider { padding: 0 4px; color: #d96c50; }
 .page-footer a { color: #135c8d; font-size: 13px; font-weight: 800; text-decoration: underline; text-underline-offset: 3px; white-space: nowrap; }
 .intro h1, .section-heading h2, .contact-card h2 {
-  font-family: 'Pixelify Sans', 'Nunito Sans', Arial, sans-serif;
+  font-family: 'Nunito Sans', Arial, sans-serif;
   font-weight: 500;
   letter-spacing: 0;
 }
@@ -301,7 +296,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .page-footer { font-size: 11px; }
 }
 
-/* Pokédex-inspired hardware treatment for the medical portfolio entry. */
+/* Med-Dex-inspired hardware treatment for the medical portfolio entry. */
 .entry-card {
   padding: 0 26px 9px;
   border: 2px solid #a42b28;
@@ -366,7 +361,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .specimen-frame { border-color: #7189a0; background: #d7e8f5; }
 .specimen-label, .specimen-caption { color: #456078; }
 .specimen-image { image-rendering: pixelated; }
-.entry-card .specimen-image, .lucario-sprite { image-rendering: pixelated; }
+.entry-card .specimen-image { image-rendering: pixelated; }
 .entry-copy {
   padding: 19px;
   border: 5px solid #607b92;
@@ -443,7 +438,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   grid-row: 2;
   justify-self: center;
   color: #ffe1d3;
-  font: 700 8px 'Courier New', monospace;
+  font: 700 8px 'Pixelify Sans', sans-serif;
   letter-spacing: .12em;
 }
 
@@ -465,108 +460,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .dex-stage {
   position: relative;
-  padding-left: clamp(78px, 10vw, 140px);
-}
-.lucario-companion {
-  position: absolute;
-  top: 34%;
-  left: 0;
-  z-index: 2;
-  width: clamp(64px, 9vw, 108px);
-  aspect-ratio: 409 / 661;
-  pointer-events: none;
-  transform: translateY(-50%);
-}
-.lucario-sprite {
-  position: relative;
-  z-index: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  image-rendering: pixelated;
-  animation: lucario-charge 1.2s steps(2, end) infinite;
-}
-.lucario-companion::after {
-  position: absolute;
-  right: 14%;
-  bottom: 1%;
-  left: 14%;
-  height: 6%;
-  border-radius: 50%;
-  background: rgb(17 42 31 / 24%);
-  content: '';
-  filter: blur(3px);
-  animation: lucario-shadow 1.2s ease-in-out infinite;
-}
-.aura-sphere {
-  position: absolute;
-  top: 33%;
-  left: 73%;
-  z-index: 2;
-  width: 26%;
-  aspect-ratio: 1;
-  border: 1px solid rgb(228 250 255 / 92%);
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 32%, #f1ffff 0 12%, #a8edff 22%, #40aefa 53%, #2565d7 78%, #163b91 100%);
-  box-shadow: 0 0 7px 3px rgb(83 190 255 / 72%), 0 0 17px 7px rgb(63 139 255 / 42%);
-  animation: aura-charge 1.35s ease-in-out infinite;
-}
-.aura-sphere::after {
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background:
-    linear-gradient(#f1ffff 0 0) 25% 24% / 16% 16%,
-    linear-gradient(#c7f5ff 0 0) 43% 19% / 12% 12%,
-    linear-gradient(#77d8ff 0 0) 69% 52% / 15% 15%,
-    linear-gradient(#4b9df0 0 0) 54% 75% / 12% 12%;
-  background-repeat: no-repeat;
-  content: '';
-  image-rendering: pixelated;
-  opacity: .72;
-}
-.aura-sphere::before {
-  position: absolute;
-  inset: -34%;
-  border: 1px solid rgb(139 221 255 / 72%);
-  border-radius: 50%;
-  content: '';
-  animation: aura-ring 1.35s ease-out infinite;
-}
-@keyframes lucario-charge {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
-}
-@keyframes lucario-shadow {
-  0%, 100% { opacity: .78; transform: scaleX(1); }
-  50% { opacity: .48; transform: scaleX(.84); }
-}
-@keyframes aura-charge {
-  0%, 100% { opacity: .82; transform: scale(.88); }
-  50% { opacity: 1; transform: scale(1.12); }
-}
-@keyframes aura-ring {
-  0% { opacity: .85; transform: scale(.72); }
-  100% { opacity: 0; transform: scale(1.4); }
 }
 
 @media (max-width: 760px) {
-  .dex-stage { padding-left: clamp(54px, 15vw, 76px); }
-  .lucario-companion { top: 50%; width: clamp(50px, 14vw, 68px); }
-
   .dex-keychain { right: -10px; transform: scale(.9); transform-origin: top right; }
 }
 
 @media (max-width: 420px) {
   .entry-topline { flex-wrap: wrap; gap: 8px; padding: 8px 0; }
   .dex-keychain { right: -7px; transform: scale(.78); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .lucario-sprite,
-  .lucario-companion::after,
-  .aura-sphere,
-  .aura-sphere::before { animation: none; }
 }
 
 .entry-card,
@@ -588,37 +490,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 @media (max-width: 760px) {
   .entry-card .entry-copy h2 { font-size: clamp(30px, 8vw, 36px); }
 }
-.footer-vehicle-dock {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 43px;
-  margin: 18px 0 0;
-  overflow: visible;
-}
-.footer-evoque {
-  display: block;
-  width: 104px;
-  max-height: 100%;
-  height: auto;
-  object-fit: contain;
-  image-rendering: pixelated;
-  filter: drop-shadow(3px 3px 0 rgb(23 50 75 / 20%));
-  transform: translateY(1px);
-}
-.footer-vehicle-dock + .page-footer { position: relative; z-index: 1; margin-top: 0; }
-@media (max-width: 760px) {
-  .footer-vehicle-dock { height: 37px; margin: 16px 0 0; }
-  .footer-evoque { width: 88px; }
-}
-@media (max-width: 420px) {
-  .footer-vehicle-dock { height: 32px; margin: 14px 0 0; }
-  .footer-evoque { width: 78px; }
-}
-
-/* Competencies entry point: a Pokédex-style button on the homepage. */
+/* Competencies entry point: a Med-Dex-style button on the homepage. */
 .site-nav .nav-competencies {
   padding: 7px 11px;
   border: 1px solid #b72e2a;
@@ -626,7 +498,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   color: #a62927;
   background: #fff8e8;
   box-shadow: 2px 2px 0 #8f2826;
-  font-family: 'Pixelify Sans', 'Nunito Sans', Arial, sans-serif;
+  font-family: 'Nunito Sans', Arial, sans-serif;
   font-size: 12px;
   transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
 }
@@ -684,4 +556,30 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .site-nav .nav-competencies { padding: 5px 7px; font-size: 10px; }
   .entry-actions { align-items: stretch; flex-direction: column; }
   .entry-actions .entry-cta { width: fit-content; max-width: 100%; }
+}
+
+.site-nav a:not(.nav-competencies) {
+  padding: 7px 10px;
+  border: 1px solid #9fb5b6;
+  border-radius: 4px;
+  color: #173e58;
+  background: #fff8e8;
+  box-shadow: 2px 2px 0 #254d6a;
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-size: 12px;
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+}
+.site-nav a:not(.nav-competencies):hover {
+  color: #173e58;
+  background: #e3edf0;
+  box-shadow: 1px 1px 0 #254d6a;
+  transform: translate(1px, 1px);
+}
+@media (max-width: 760px) {
+  .site-nav { gap: 10px; }
+}
+@media (max-width: 420px) {
+  .site-header { flex-wrap: wrap; gap: 12px; padding: 10px 0; }
+  .site-nav { order: 2; width: 100%; justify-content: space-between; gap: 6px; margin: 0; }
+  .site-nav a:not(.nav-competencies) { padding: 5px 6px; font-size: 10px; }
 }

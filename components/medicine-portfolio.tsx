@@ -80,7 +80,7 @@ export function MedicinePortfolio() {
 
         <section className="intro" id="top" aria-labelledby="intro-title">
           <div className="intro-copy">
-            <p className="eyebrow intro-eyebrow"><span className="live-dot" /> A LIVING RECORD · UPDATED [MONTH YEAR]</p>
+            <p className="eyebrow intro-eyebrow"><span className="live-dot" /> A LIVING RECORD · UPDATED 12-11-2026</p>
             <h1 id="intro-title">Portfolio</h1>
           </div>
           <a className="intro-link" href="#profile">
@@ -89,10 +89,6 @@ export function MedicinePortfolio() {
         </section>
 
         <div className="dex-stage">
-          <div className="lucario-companion" aria-hidden="true">
-            <Image className="lucario-sprite" src="/lucario-aura-cutout.png" alt="" width={409} height={661} priority />
-            <span className="aura-sphere" />
-          </div>
           <div className="dex-keychain" role="img" aria-label="Karate black belt and cycling keychain">
             <span className="dex-keychain-ring" aria-hidden="true" />
             <span className="dex-keychain-chain" aria-hidden="true" />
@@ -103,7 +99,7 @@ export function MedicinePortfolio() {
           </div>
           <section className="entry-card" id="profile" aria-labelledby="entry-name">
           <div className="entry-topline">
-            <span><span className="tiny-square" /> POKÉDEX / HUMAN FILE</span>
+            <span><span className="tiny-square" /> MED-DEX / HUMAN FILE</span>
             <span className="dex-entry-number">NO. <strong>001</strong></span>
           </div>
 
@@ -112,10 +108,10 @@ export function MedicinePortfolio() {
               <div className="specimen-label"><span>FIG. 01</span><span>FIELD SPECIMEN</span></div>
               <Image
                 className="specimen-image"
-                src="/clinical-dex-sprite-blue.png"
-                alt="Pixel-art Pokédex specimen: a stethoscope curled around ginkgo leaves and a capsule"
-                width={800}
-                height={600}
+                src="/med-dex-portrait.jpg"
+                alt="Portrait of the portfolio owner wearing glasses and a navy turtleneck"
+                width={3028}
+                height={4055}
                 priority
               />
               <div className="specimen-caption"><Stethoscope size={14} aria-hidden="true" /> CARE, CURIOSITY &amp; CLINICAL PRACTICE</div>
@@ -220,16 +216,6 @@ export function MedicinePortfolio() {
           </aside>
         </section>
 
-        <div className="footer-vehicle-dock">
-          <Image
-            className="footer-evoque"
-            src="/range-rover-evoque-side-profile.png"
-            alt="White pixel-art Range Rover Evoque shown from the right side"
-            width={896}
-            height={362}
-            sizes="(max-width: 420px) 78px, (max-width: 760px) 88px, 104px"
-          />
-        </div>
         <footer className="page-footer">
           <span>MED-DEX <span className="footer-divider">/</span> A PERSONAL FIELD GUIDE</span>
           <span>MADE WITH CARE, BY ATHUL KOCHITTY GEORGE</span>
