@@ -54,7 +54,7 @@ export function CompetencyDetail({ competency }: { competency: Competency }) {
               <small>{competency.number}</small>
             </div>
             <div className="cf-detail-title-wrap">
-              <p className="cf-eyebrow">POKÉDEX ENTRY · EMIRATESMEDs / {competency.number}</p>
+              <p className="cf-eyebrow">EMIRATESMEDs FRAMEWORK / {competency.number}</p>
               <h1 id="cf-detail-title">{competency.title}<span>.</span></h1>
               <p className="cf-detail-teaser">{competency.teaser}</p>
             </div>
@@ -85,7 +85,7 @@ export function CompetencyDetail({ competency }: { competency: Competency }) {
                 <p className="cf-eyebrow"><span className="cf-live-dot" /> TRAINER LOG · EXPERIENCE 001</p>
                 <h2 id="cf-activity-title">World Anatomy Day</h2>
                 <p className="cf-activity-intro">
-                  I was recognised with a Certificate of Appreciation for helping organise World Anatomy Day at Gulf Medical University on 15 October 2026.
+                  I was recognised with a Certificate of Appreciation for helping organise World Anatomy Day at Gulf Medical University on <time className="cf-event-date" dateTime="2026-10-15">15 October 2026</time>.
                 </p>
                 <div className="cf-activity-tags" aria-label="Experience details">
                   <span>COLLABORATION</span>
