@@ -199,12 +199,28 @@ export function MedicinePortfolio() {
         <section className="closing-grid" aria-label="Education and contact">
           <article className="education-card">
             <SectionHeading index="02" eyebrow="TRAINING LOG" title="The learning never stops." />
-            <div className="education-entry">
-              <span className="education-marker" aria-hidden="true" />
-              <div><p className="eyebrow">COMING SOON</p><h3>Education & training</h3><p>Academic details will be added here.</p></div>
-              <span className="education-code">EDU / SOON</span>
+            <div className="training-photo-deck" role="group" aria-label="Photos from anatomy and research presentations">
+              <figure className="training-photo-card training-photo-card--anatomy">
+                <Image
+                  src="/field-anatomy-presentation.jpg"
+                  alt="Athul presenting an anatomy dissection and data collection study in a medical lab"
+                  width={2480}
+                  height={3307}
+                  sizes="(max-width: 420px) 118px, 160px"
+                />
+                <figcaption>ANATOMY PRESENTATION</figcaption>
+              </figure>
+              <figure className="training-photo-card training-photo-card--research">
+                <Image
+                  src="/field-research-presentation.jpg"
+                  alt="Athul presenting research findings beside a classroom screen"
+                  width={2480}
+                  height={3307}
+                  sizes="(max-width: 420px) 118px, 160px"
+                />
+                <figcaption>RESEARCH PRESENTATION</figcaption>
+              </figure>
             </div>
-            <p className="education-footnote">The training log will grow alongside the journey.</p>
           </article>
 
           <aside className="contact-card" id="contact">
