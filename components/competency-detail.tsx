@@ -95,12 +95,36 @@ export function CompetencyDetail({ competency }: { competency: Competency }) {
 
                 <div className="cf-activity-reflection">
                   <p className="cf-eyebrow">MY REFLECTION</p>
-                  <h3>What I learned</h3>
-                  <p>
-                    Being involved in preparing and organising the event gave me a chance to contribute to a shared goal with fellow students. From helping prepare the event materials to taking part in the day itself, I saw how communication, coordination and shared responsibility bring a team&apos;s work together. It reminded me that collaboration is not simply working alongside other people; it is listening, supporting one another and making sure each contribution helps the group move forward. I hope to carry that mindset into clinical learning, where good patient care depends on healthcare professionals working together.
-                  </p>
+                  <h3 id="cf-reflection-title">What I learned</h3>
+                  <p className="cf-reflection-scroll-hint">Scroll to read all six sections</p>
+                  <div className="cf-activity-reflection-scroll" role="region" aria-labelledby="cf-reflection-title" tabIndex={0}>
+                    <section className="cf-reflection-entry" aria-labelledby="cf-reflection-description">
+                      <h4 id="cf-reflection-description">Description</h4>
+                      <p>On 15 October 2026, I participated in World Anatomy Day at GMU. It was my first experience taking an organising role at an event. Our topic was the abdominal region, so I helped create a poster and also competed in the plank competition. Being involved in both the preparation and the event itself allowed me to experience different aspects of organising and participating in a university activity.</p>
+                    </section>
+                    <section className="cf-reflection-entry" aria-labelledby="cf-reflection-feelings">
+                      <h4 id="cf-reflection-feelings">Feelings</h4>
+                      <p>Before the event, I was slightly nervous about taking on unfamiliar responsibilities. I was also excited to be part of an event that brought students together through interactive activities and anatomy. Managing participants and ensuring activities ran smoothly was more challenging than I had anticipated. Taking part in the plank competition was especially enjoyable because I could challenge fellow participants and experience the competitive atmosphere first-hand.</p>
+                    </section>
+                    <section className="cf-reflection-entry" aria-labelledby="cf-reflection-evaluation">
+                      <h4 id="cf-reflection-evaluation">Evaluation</h4>
+                      <p>One enjoyable aspect was designing the poster, which gave me an opportunity to express my creativity. Teaching abdominal anatomy also allowed me to share my knowledge with others. I enjoyed participating in the plank competition rather than remaining behind the scenes. However, coordinating activities and interacting with participants presented challenges, reminding me that event organisation involves more than I had expected.</p>
+                    </section>
+                    <section className="cf-reflection-entry" aria-labelledby="cf-reflection-analysis">
+                      <h4 id="cf-reflection-analysis">Analysis</h4>
+                      <p>I learned that successful event organisation depends on several responsibilities working together. Preparing materials and activities is important, but effective communication, coordination and adaptability are equally essential. My contributions involved different skills: creativity, explaining anatomical concepts and participating in a physical challenge. This experience helped me see how individual efforts combine to create a shared outcome.</p>
+                    </section>
+                    <section className="cf-reflection-entry" aria-labelledby="cf-reflection-conclusion">
+                      <h4 id="cf-reflection-conclusion">Conclusion</h4>
+                      <p>Overall, World Anatomy Day was valuable because it allowed me to step beyond my usual responsibilities and explore different ways of contributing to a team. It helped me recognise that I can contribute creatively, academically and through participation. It also showed me where I can improve, particularly in managing groups and coordinating activities effectively.</p>
+                    </section>
+                    <section className="cf-reflection-entry" aria-labelledby="cf-reflection-action-plan">
+                      <h4 id="cf-reflection-action-plan">Action Plan</h4>
+                      <p>For future events, I will prepare clear instructions, communicate responsibilities with fellow organisers in advance, and consider how participants will move between activities. I would also like to take on more coordination responsibilities to build my confidence in managing groups. I hope to use these lessons to strengthen my organisation, communication and teamwork skills.</p>
+                    </section>
+                  </div>
                 </div>
-                <p className="cf-activity-credit">Evidence: Certificate of Appreciation, event preparation and team photograph.</p>
+                <p className="cf-activity-credit">Evidence: Certificate of Appreciation, event preparation, team photograph and plank competition participation.</p>
               </div>
 
               <div className="cf-activity-gallery" aria-label="World Anatomy Day evidence gallery">
@@ -139,6 +163,18 @@ export function CompetencyDetail({ competency }: { competency: Competency }) {
                     />
                   </div>
                   <span><small>TEAM EVIDENCE</small><strong>World Anatomy Day team</strong></span>
+                </a>
+                <a className="cf-activity-image cf-activity-participation" href="/world-anatomy-day-plank-challenge.jpg" target="_blank" rel="noreferrer">
+                  <div className="cf-activity-image-frame">
+                    <Image
+                      src="/world-anatomy-day-plank-challenge.jpg"
+                      alt="Two participants holding forearm planks on a red mat during World Anatomy Day"
+                      width={1049}
+                      height={1049}
+                      sizes="(max-width: 650px) 90vw, 320px"
+                    />
+                  </div>
+                  <span><small>EVENT PARTICIPATION</small><strong>Plank competition</strong></span>
                 </a>
               </div>
             </section>
